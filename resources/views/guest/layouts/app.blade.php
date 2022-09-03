@@ -85,7 +85,7 @@
                         <div class="tiny-border"></div>
                         Somewhere Over Rainbow<br>
                         Green World Rainbow Green World<br>
-                        Phone. 0908 100 1000<br>
+                        Phone. 098 100 1000<br>
                         Email: contact@exotheme.com<br>
 
                         <div class="divider-single"></div>
