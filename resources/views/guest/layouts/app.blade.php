@@ -47,7 +47,7 @@
                                 </li>
                                 <li><a href="{{route('about')}}">About Us</a></li>
                                 <li><a href="{{route('track')}}">Track</a></li>
-                                <li><a href="{{route('contact')}}">Contact</a></li>
+                                {{-- <li><a href="{{route('contact')}}">Contact</a></li> --}}
                             </ul>
                         </nav>
                         <!-- mainmenu close -->
