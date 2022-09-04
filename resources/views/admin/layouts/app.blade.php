@@ -4,9 +4,9 @@
 		<!-- Meta data -->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-		<meta content="Solic – Bootstrap Responsive Modern Simple Dashboard Clean HTML Premium Admin Template" name="description">
-		<meta content="Spruko Technologies Private Limited" name="author">
-		<meta name="keywords" content="html5 template, admin panel html template,  html5 admin template, admin panel html, admin panel html template, html css admin templates, dashboard html5, html dashboard template, simple dashboard html template, html5 dashboard template, dashboard html5,  simple dashboard html, dashboard design template, bootstrap 4 admin template,  bootstrap admin template,  admin, premium admin templates, best bootstrap admin template, bootstrap dashboard template,   admin ui templates, modern admin template, admin panel template bootstrap 4"   />
+		<meta content="FhqShipping – Make shipments anywhere fast and easy" name="description">
+		<meta content="Fhq Shipping Company" name="author">
+		<meta name="keywords" content="fhqshipping, fhq shipping"   />
 		<!--favicon -->
 <link rel="icon" href="{{asset('app/images/brand/favicon.ico')}}" type="image/x-icon"/>
 <link rel="shortcut icon" href="{{asset('app/images/brand/favicon.ico')}}" type="image/x-icon"/>

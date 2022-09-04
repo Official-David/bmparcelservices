@@ -4,9 +4,10 @@
 <head>
     <meta charset="utf-8">
     <title>@yield('title') | {{config('app.name')}}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+	<meta content="FhqShipping – Make shipments anywhere fast and easy" name="description">
+	<meta content="Fhq Shipping Company" name="author">
+	<meta name="keywords" content="fhqshipping, fhq shipping"   />
 
     <!-- LOAD CSS FILES -->
     <link href="{{asset('assets/css/main.css')}}" rel="stylesheet" type="text/css">
