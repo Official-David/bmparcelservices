@@ -53,7 +53,9 @@
 				    <!-- CONTAINER OPEN -->
 					<div class="col col-login mx-auto">
 						<div class="text-center">
-							<img src="{{asset('app/images/brand/logo-2.png')}}" class="header-brand-img" alt="">
+							<a href="{{route('home')}}">
+								<img src="{{asset('app/images/brand/logo-2.png')}}" class="header-brand-img" alt="">
+							</a>
 						</div>
 					</div>
 					<div class="container-login100">
@@ -61,17 +63,17 @@
 							<form class="login100-form validate-form" action="{{route('login')}}" method="post">
                                 @csrf
 								<span class="login100-form-title">
-									Member Login
+									Admin Login
 								</span>
 								<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-									<input class="input100" type="text" name="email" placeholder="Email">
+									<input class="input100" type="text" name="email" placeholder="Email" required>
 									<span class="focus-input100"></span>
 									<span class="symbol-input100">
 										<i class="zmdi zmdi-email" aria-hidden="true"></i>
 									</span>
 								</div>
 								<div class="wrap-input100 validate-input" data-validate = "Password is required">
-									<input class="input100" type="password" name="password" placeholder="Password">
+									<input class="input100" type="password" name="password" placeholder="Password" required>
 									<span class="focus-input100"></span>
 									<span class="symbol-input100">
 										<i class="zmdi zmdi-lock" aria-hidden="true"></i>
