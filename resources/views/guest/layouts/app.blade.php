@@ -83,10 +83,8 @@
                     <div class="col-md-4">
                         <h3>Location</h3>
                         <div class="tiny-border"></div>
-                        Somewhere Over Rainbow<br>
-                        Green World Rainbow Green World<br>
-                        Phone. 098 100 1000<br>
-                        Email: contact@exotheme.com<br>
+                        Califonia, USA<br>
+                        Email: support@fhqshipping.com<br>
 
                         <div class="divider-single"></div>
                     </div>
