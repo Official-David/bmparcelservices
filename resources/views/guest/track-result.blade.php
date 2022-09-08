@@ -137,13 +137,29 @@
                 </div>
             </div>
 
-            <div class="light-text">
+            <div class="light-text" id="trackResult">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="divider-double"></div>
-                            <div class="text-center">
-                                <h3><span class="grey">Tracking ID: </span>{{ $shipments[0]->tracking_id }}</h3>
+                            <div>
+                                <h3 class="text-center"><span class="grey">Tracking ID: </span>{{ $shipments[0]->tracking_id }}</h3>
+                                <br>
+                                <div class="row">
+                                    <div class="col-md-6"><h5 class="text-center">Sender Information</h5>
+                                    <div>Name:</div>
+                                    <div>Email:</div>
+                                    <div>Phone:</div>
+                                    <div>Address:</div>
+                                    </div>
+                                       
+                                    <div class="col-md-6"><h5 class="text-center">Receiver Information</h5>
+                                    <div>Name:</div>
+                                    <div>Email:</div>
+                                    <div>Phone:</div>
+                                    <div>Address:</div>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="divider-double"></div>
