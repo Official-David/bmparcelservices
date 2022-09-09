@@ -22,6 +22,142 @@
                     </div>
                     <div class="card-body">
                         <div class="row">
+                            <!-- SENDER INFO -->
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Sender Name</label>
+                                    <input type="text" class="form-control" name="sender_name"
+                                        placeholder="Sender Name">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Sender Email</label>
+                                    <input type="text" class="form-control" name="sender_email"
+                                        placeholder="Sender Email">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Sender Phone</label>
+                                    <input type="text" class="form-control" name="sender_phone"
+                                        placeholder="Sender Phone">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Sender Address</label>
+                                    <input type="text" class="form-control" name="sender_address"
+                                        placeholder="Sender Address">
+                                </div>
+                            </div>
+                            <!-- END SENDER INFO -->
+                            <!-- RECEIVER INFO -->
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Receiver Name</label>
+                                    <input type="text" class="form-control" name="receiver_name"
+                                        placeholder="Receiver Name">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Receiver Email</label>
+                                    <input type="text" class="form-control" name="receiver_email"
+                                        placeholder="Receiver Email">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Receiver Phone</label>
+                                    <input type="text" class="form-control" name="receiver_phone"
+                                        placeholder="Receiver Phone">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Receiver Address</label>
+                                    <input type="text" class="form-control" name="receiver_address"
+                                        placeholder="Receiver Address">
+                                </div>
+                            </div>
+                            <!-- END RECEIVER INFO -->
+                            <!-- SHIPMENT INFO -->
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label class="form-label">Origin</label>
+                                    <input type="text" class="form-control" name="origin"
+                                        placeholder="Origin">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label class="form-label">Destination</label>
+                                    <input type="text" class="form-control" name="destination"
+                                        placeholder="Destination">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label class="form-label">Type Of Shipment</label>
+                                    <input type="text" class="form-control" name="type_of_shipment"
+                                        placeholder="Type Of Shipment">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Carrier</label>
+                                    <input type="text" class="form-control" name="carrier"
+                                        placeholder="Carrier">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Shipment Mode</label>
+                                    <input type="text" class="form-control" name="shipment_mode"
+                                        placeholder="Shipment Mode">
+                                </div>
+                            </div>
+                            <!-- END SHIPMENT INFO -->
+                            <!-- SHIPMENT INFO -->
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Product</label>
+                                    <input type="text" class="form-control" name="product"
+                                        placeholder="Product">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label class="form-label">Quantity</label>
+                                    <input type="text" class="form-control" name="quantity"
+                                        placeholder="Quantity">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label class="form-label">Weight</label>
+                                    <input type="text" class="form-control" name="weight"
+                                        placeholder="Weight">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label class="form-label">Payment Mode</label>
+                                    <input type="text" class="form-control" name="payment_mode"
+                                        placeholder="Payment Mode">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Expected Delivery Date</label>
+                                    <input type="datetime-local" class="form-control" name="expected_delivery_date"
+                                        placeholder="Expected Delivery Date">
+                                </div>
+                            </div>
+                            <!-- END SHIPMENT INFO -->
+
+
                             <div class="col-md-8">
                                 <div class="form-group">
                                     <label class="form-label">Shipment/Package Name</label>
