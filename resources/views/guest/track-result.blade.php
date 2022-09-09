@@ -185,7 +185,7 @@
                             </div>
                         </div>
 
-                        <div class="divider-double"></div>
+                        <div class="divider"></div>
 
                         <div class="wrapper-line padding40 rounded10">
 
