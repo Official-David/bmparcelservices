@@ -76,12 +76,15 @@
 									</a>
 									<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
 										<div class="drop-heading  text-center border-bottom pb-3">
-											<h6 class="text-dark mb-1">{{Auth::user()->name}}</h6>
+											<p class="text-dark mb-1">{{Auth::user()->name}}</p>
 											<small class="text-muted">{{Auth::user()->email}}</small>
+										</div>
+										<div>
+											<h6 class="sub-icon dropdown-item"><a href="#"><i class="zmdi zmdi-lock-outline"></i> Change Password</a></h6>
 										</div>
 										<form action="{{ route('logout') }}" method="post">
 											@csrf
-										<button class="sub-icon dropdown-item"><i class="mdi  mdi-logout-variant mr-2"></i> <span>Logout</span></button></form>
+											<button class="sub-icon dropdown-item"><i class="mdi mdi-logout-variant mr-2"></i> Logout</button></form>
 									</div>
 								</div><!-- SIDE-MENU -->
 								<!-- FULL-SCREEN -->
