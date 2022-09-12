@@ -27,7 +27,7 @@ class ShipmentController extends Controller
     public function newShipment(Request $request)
     {
         tracking_id:
-        $tracking_id = 'FH' . date_timestamp_get(date_create());
+        $tracking_id = 'FHQ' . date_timestamp_get(date_create());
         if (Shipment::where('tracking_id', $tracking_id)->exists()) {
             goto tracking_id;
         }
