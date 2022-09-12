@@ -89,7 +89,7 @@
                                     <select required class="form-control" name="origin"
                                         placeholder="Origin">
                                         @foreach ($countries as $country)
-                                        <option value="{{$country->id}}">{{$country->name}}</option>
+                                        <option value="{{$country->name}}">{{$country->name}}</option>
                                         @endforeach
                                     </select>
                                 </div>
@@ -100,7 +100,7 @@
                                     <select required class="form-control" name="destination"
                                         placeholder="Destination">
                                         @foreach ($countries as $country)
-                                        <option value="{{$country->id}}">{{$country->name}}</option>
+                                        <option value="{{$country->name}}">{{$country->name}}</option>
                                         @endforeach
                                     </select>
                                 </div>
