@@ -12,6 +12,8 @@
 <link rel="shortcut icon" href="{{asset('app/images/brand/favicon.ico')}}" type="image/x-icon"/>
 <!-- TITLE -->
 <title>@yield('title') | {{config('app.name')}}</title>
+<!--Sweat Alert Css-->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <!-- DASHBOARD CSS -->
 <link href="{{asset('app/css/dashboard.css')}}" rel="stylesheet"/>
 <link href="{{asset('app/css/dashboard-dark.css')}}" rel="stylesheet"/>
@@ -79,9 +81,9 @@
 											<p class="text-dark mb-1">{{Auth::user()->name}}</p>
 											<small class="text-muted">{{Auth::user()->email}}</small>
 										</div>
-										<div>
+										{{-- <div>
 											<h6 class="sub-icon dropdown-item"><a href="#"><i class="zmdi zmdi-lock-outline"></i> Change Password</a></h6>
-										</div>
+										</div> --}}
 										<form action="{{ route('logout') }}" method="post">
 											@csrf
 											<button class="sub-icon dropdown-item"><i class="mdi mdi-logout-variant mr-2"></i> Logout</button></form>

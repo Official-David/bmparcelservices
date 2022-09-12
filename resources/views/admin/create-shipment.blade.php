@@ -26,28 +26,28 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label class="form-label">Sender Name</label>
-                                    <input type="text" class="form-control" name="sender_name"
+                                    <input required type="text" class="form-control" name="sender_name"
                                         placeholder="Sender Name">
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label class="form-label">Sender Email</label>
-                                    <input type="text" class="form-control" name="sender_email"
+                                    <input required type="email" class="form-control" name="sender_email"
                                         placeholder="Sender Email">
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label class="form-label">Sender Phone</label>
-                                    <input type="text" class="form-control" name="sender_phone"
+                                    <input required type="text" class="form-control" name="sender_phone"
                                         placeholder="Sender Phone">
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label class="form-label">Sender Address</label>
-                                    <input type="text" class="form-control" name="sender_address"
+                                    <input required type="text" class="form-control" name="sender_address"
                                         placeholder="Sender Address">
                                 </div>
                             </div>
@@ -56,28 +56,28 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label class="form-label">Receiver Name</label>
-                                    <input type="text" class="form-control" name="receiver_name"
+                                    <input required type="text" class="form-control" name="receiver_name"
                                         placeholder="Receiver Name">
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label class="form-label">Receiver Email</label>
-                                    <input type="text" class="form-control" name="receiver_email"
+                                    <input required type="email" class="form-control" name="receiver_email"
                                         placeholder="Receiver Email">
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label class="form-label">Receiver Phone</label>
-                                    <input type="text" class="form-control" name="receiver_phone"
+                                    <input required type="text" class="form-control" name="receiver_phone"
                                         placeholder="Receiver Phone">
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label class="form-label">Receiver Address</label>
-                                    <input type="text" class="form-control" name="receiver_address"
+                                    <input required type="text" class="form-control" name="receiver_address"
                                         placeholder="Receiver Address">
                                 </div>
                             </div>
@@ -86,7 +86,7 @@
                             <div class="col-md-2">
                                 <div class="form-group">
                                     <label class="form-label">Origin</label>
-                                    <select class="form-control" name="origin"
+                                    <select required class="form-control" name="origin"
                                         placeholder="Origin">
                                         @foreach ($countries as $country)
                                         <option value="{{$country->id}}">{{$country->name}}</option>
@@ -97,7 +97,7 @@
                             <div class="col-md-2">
                                 <div class="form-group">
                                     <label class="form-label">Destination</label>
-                                    <select class="form-control" name="destination"
+                                    <select required class="form-control" name="destination"
                                         placeholder="Destination">
                                         @foreach ($countries as $country)
                                         <option value="{{$country->id}}">{{$country->name}}</option>
@@ -108,7 +108,7 @@
                             <div class="col-md-2">
                                 <div class="form-group">
                                     <label class="form-label">Type Of Shipment</label>
-                                    <select class="form-control" name="type_of_shipment"
+                                    <select required class="form-control" name="type_of_shipment"
                                         placeholder="Type Of Shipment">
                                         <option value='1'>Internaitional Shipment</option>
                                         <option value='2'>Loacal Shipment</option>
@@ -118,14 +118,14 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label class="form-label">Carrier</label>
-                                    <input type="text" class="form-control" name="carrier"
+                                    <input required type="text" class="form-control" name="carrier"
                                         placeholder="Carrier">
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label class="form-label">Shipment Mode</label>
-                                    <select class="form-control" name="shipment_mode"
+                                    <select required class="form-control" name="shipment_mode"
                                         placeholder="Shipment Mode">
                                     <option value='1'>Air Freight</option>
                                     <option value='2'>Ocean Freight</option>
@@ -138,28 +138,28 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label class="form-label">Product</label>
-                                    <input type="text" class="form-control" name="product"
+                                    <input required type="text" class="form-control" name="product"
                                         placeholder="Product">
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
                                     <label class="form-label">Quantity</label>
-                                    <input type="text" class="form-control" name="quantity"
+                                    <input required type="text" class="form-control" name="quantity"
                                         placeholder="Quantity">
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
                                     <label class="form-label">Weight</label>
-                                    <input type="text" class="form-control" name="weight"
+                                    <input required type="text" class="form-control" name="weight"
                                         placeholder="Weight">
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
                                     <label class="form-label">Payment Mode</label>
-                                    <select class="form-control" name="payment_mode"
+                                    <select required class="form-control" name="payment_mode"
                                         placeholder="Payment Mode">
                                     <option value="1">Cash</option>
                                     <option value="2">Cheque</option>
@@ -169,7 +169,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label class="form-label">Expected Delivery Date</label>
-                                    <input type="date" class="form-control" name="expected_delivery_date"
+                                    <input required type="date" class="form-control" name="expected_delivery_date"
                                         placeholder="Expected Delivery Date">
                                 </div>
                             </div>
@@ -179,14 +179,14 @@
                             <div class="col-md-8">
                                 <div class="form-group">
                                     <label class="form-label">Shipment/Package Name</label>
-                                    <input type="text" class="form-control" name="name"
+                                    <input required type="text" class="form-control" name="name"
                                         placeholder="Shipment/Package Name">
                                 </div>
                             </div>
                             <div class="col-sm-6 col-md-4">
                                 <div class="form-group">
                                     <label class="form-label">Current Location</label>
-                                    <input type="text" class="form-control" name="location"
+                                    <input required type="text" class="form-control" name="location"
                                         placeholder="Current Location">
                                 </div>
                             </div>
@@ -194,7 +194,7 @@
                             <div class="col-sm-6 col-md-4">
                                 <div class="form-group">
                                     <label class="form-label">Shipment Status</label>
-                                    <select class="form-control" name="shipment_status">
+                                    <select required class="form-control" name="shipment_status">
                                         <option value="1">Shipment Accepted</option>
                                         <option value="2">On Transit</option>
                                         <option value="3">Out for Delivery</option>
@@ -205,7 +205,7 @@
                             <div class="col-sm-6 col-md-4">
                                 <div class="form-group">
                                     <label class="form-label">Delivery Status</label>
-                                    <select class="form-control" name="delivery_status">
+                                    <select required class="form-control" name="delivery_status">
                                         <option value="1">On Transit</option>
                                         <option value="2">Stopped</option>
                                         <option value="3">Delivered</option>
@@ -215,14 +215,14 @@
                             <div class="col-sm-6 col-md-4">
                                 <div class="form-group">
                                     <label class="form-label">Date</label>
-                                    <input type="datetime-local" class="form-control" name="created_at">
+                                    <input required type="datetime-local" class="form-control" name="created_at">
                                 </div>
                             </div>
 
                             <div class="col-md-12">
                                 <div class="form-group mb-0">
                                     <label class="form-label">Delivery Message</label>
-                                    <textarea rows="5" class="form-control" placeholder="Delivery Message" name="message"></textarea>
+                                    <textarea required rows="5" class="form-control" placeholder="Delivery Message" name="message"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -239,5 +239,23 @@
     <!-- CONTAINER CLOSED -->
     </div>
     <!-- SIDE-BAR -->
+    @if (session('updatedShipment'))
+    <script>
+        Swal.fire({
+            icon: 'success',
+            title: 'Successful',
+            text: '{{ session('updatedShipment') }}'
+        })
+    </script>
+@endif
 
+@if (session('deleted'))
+    <script>
+        Swal.fire({
+            icon: 'success',
+            title: 'Successful',
+            text: '{{ session('deleted') }}'
+        })
+    </script>
+@endif
 @endsection

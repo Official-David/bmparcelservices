@@ -74,7 +74,7 @@ class ShipmentController extends Controller
         $shipment_notification->save();
 
         $shipments = Shipment::latest()->paginate(10);
-        return view('admin.shipments', compact('shipments'));
+        return redirect()->route('shipments', compact('shipments'))->with(session()->flash('shipmentSaved', 'Shipment Created Successfully'));
     }
 
     public function shipmentDetails($id)
@@ -105,27 +105,26 @@ class ShipmentController extends Controller
         $shipment_notification->created_at = $request->input('created_at');
         $shipment_notification->save();
         // return view('admin.shipment-details', compact('shipmentDetails', 'shipment'));
-        return back();
+        return back()->with(session()->flash('shipmentDetailSaved', 'Added Successfully'));
     }
 
     public function deleteShipment($id)
     {
         $shipment = Shipment::where('id', $id)->first();
         $shipment->delete();
-        return back();
+        return back()->with(session()->flash('shipmentDeleted', 'Deleted Successfully'));
     }
 
     public function deleteShipmentDetails($id){
         $shipment = Shipment_Notification::where('id', $id)->first();
         $shipment->delete();
-        return back();
+        return back()->with(session()->flash('shipmentDetailsDeleted', 'Deleted Successfully'));
     }
 
     public function editShipmentDetails($id){
         $shipment = Shipment::where('id', $id)->first();
         $shipmentDetails = Shipment_Notification::where('shipment_id', $id)->get();
         return view('admin.edit-shipment-details', compact('shipment', 'shipmentDetails'));
-        // dd($shipment);
     }
 
     public function updateShipmentDetail(Request $request, $id){
@@ -138,7 +137,7 @@ class ShipmentController extends Controller
         $shipment_notification->location = $request->input('location');
         $shipment_notification->created_at = $request->input('created_at');
         $shipment_notification->update();
-        return back();
+        return back()->with(session()->flash('shipmentDetailsEdited', 'Updated Successfully'));
     }
 
 }

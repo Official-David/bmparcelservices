@@ -86,4 +86,23 @@
     </div>
     <!-- SIDE-BAR -->
 
+    @if (session('shipmentDetailSaved'))
+        <script>
+            Swal.fire({
+                icon: 'success',
+                title: 'Successful',
+                text: '{{ session('shipmentDetailSaved') }}'
+            })
+        </script>
+@elseif (session('deleted'))
+        <script>
+            Swal.fire({
+                icon: 'success',
+                title: 'Successful',
+                text: '{{ session('deleted') }}'
+            })
+        </script>
+@endif
+
 @endsection
+

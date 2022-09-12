@@ -18,7 +18,9 @@
             <div class="col-md-12 col-lg-12">
                 <div class="card">
                     <div class="card-header">
-                        <div class="card-title">Shipments <button class="btn btn-success btn-sm"><a href="{{route('create.shipment')}}" style="color:white">Create Shipment</a></button></div>
+                        <div class="card-title">Shipments <button class="btn btn-success btn-sm"><a
+                                    href="{{ route('create.shipment') }}" style="color:white">Create Shipment</a></button>
+                        </div>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
@@ -41,18 +43,24 @@
                                             </td>
                                             <td>{{ ucfirst($shipment->shipment_status) }}</td>
                                             <td>{{ ucfirst($shipment->created_at) }}</td>
-                                            <td class="text-center"><form action="{{route('delete.shipment', $shipment->id)}}" method="POST">@csrf <button class="btn btn-danger fa fa-trash" type="submit"></button></form></td>
+                                            <td class="text-center">
+                                                <form action="{{ route('delete.shipment', $shipment->id) }}" method="POST">
+                                                    @csrf <button class="btn btn-danger fa fa-trash"
+                                                        type="submit"></button></form>
+                                            </td>
                                             </a>
                                         </tr>
                                     @empty
-									<tr><td class="text-center" colspan="5">No Shipment Yet!</td></tr>
+                                        <tr>
+                                            <td class="text-center" colspan="5">No Shipment Yet!</td>
+                                        </tr>
                                     @endforelse
                                 </tbody>
                             </table>
                         </div>
                         <div class="float-sm-end pagination-rounded justify-content-center mt-4">
-                                {{ $shipments->onEachSide(1)->links() }}
-                            </div>
+                            {{ $shipments->onEachSide(1)->links() }}
+                        </div>
                     </div>
                     <!-- TABLE WRAPPER -->
                 </div>
@@ -66,4 +74,21 @@
     <!-- SIDE-BAR -->
 
     <!-- SIDE-BAR CLOSED -->
+    @if (session('shipmentSaved'))
+        <script>
+            Swal.fire({
+                icon: 'success',
+                title: 'Successful',
+                text: '{{ session('shipmentSaved') }}'
+            })
+        </script>
+    @elseif(session('shipmentDeleted'))
+        <script>
+            Swal.fire({
+                icon: 'success',
+                title: 'Successful',
+                text: '{{ session('shipmentDeleted') }}'
+            })
+        </script>
+    @endif
 @endsection

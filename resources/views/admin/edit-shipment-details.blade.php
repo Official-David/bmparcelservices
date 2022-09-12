@@ -86,5 +86,20 @@
     </div>
     <!-- CONTAINER CLOSED -->
     </div>
-
+    @if (session('shipmentDetailsEdited'))
+        <script>
+            Swal.fire({
+                icon: 'success',
+                title: 'Successful',
+                text: '{{ session('shipmentDetailsEdited') }}'
+            })
+        </script>
+@elseif(session('shipmentSaved'))
+<script>
+    Swal.fire({
+        icon: 'success',
+        title: 'Successful',
+        text: '{{ session('shipmentSaved') }}'
+    })
+</script>
 @endsection
