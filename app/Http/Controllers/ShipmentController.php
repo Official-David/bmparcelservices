@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Shipment;
 use App\Models\Shipment_Notification;
+use App\Models\Country;
+use App\Models\Receiver;
+use App\Models\Sender;
 use BaconQrCode\Renderer\Color\Rgb;
 
 class ShipmentController extends Controller
@@ -17,7 +20,8 @@ class ShipmentController extends Controller
 
     public function createShipment()
     {
-        return view('admin.create-shipment');
+        $countries = Country::all();
+        return view('admin.create-shipment', compact('countries'));
     }
 
     public function newShipment(Request $request)
@@ -28,11 +32,39 @@ class ShipmentController extends Controller
             goto tracking_id;
         }
         $shipment = new Shipment;
+        $shipment->origin = $request->input('origin');
+        $shipment->destination = $request->input('destination');
+        $shipment->type_of_shipment = $request->input('type_of_shipment');
+        $shipment->type_of_shipment = $request->input('type_of_shipment');
+        $shipment->carrier = $request->input('carrier');
+        $shipment->shipment_mode = $request->input('shipment_mode');
+        $shipment->product = $request->input('product');
+        $shipment->quantity = $request->input('quantity');
+        $shipment->weight = $request->input('weight');
+        $shipment->payment_mode = $request->input('payment_mode');
+        $shipment->expected_delivery_date = $request->input('expected_delivery_date');
         $shipment->shipment_name = $request->input('name');
         $shipment->shipment_status = $request->input('shipment_status');
         $shipment->tracking_id = $tracking_id;
         $shipment->created_at = $request->input('created_at');
         $shipment->save();
+
+        $senderName = new Sender;
+        $senderName->shipment_id = Shipment::where('tracking_id', $tracking_id)->value('id');
+        $senderName->name = $request->input('sender_name');
+        $senderName->email = $request->input('sender_email');
+        $senderName->phone = $request->input('sender_phone');
+        $senderName->address = $request->input('sender_address');
+        $senderName->save();
+
+        $receiverName = new Receiver();
+        $receiverName->shipment_id = Shipment::where('tracking_id', $tracking_id)->value('id');
+        $receiverName->name = $request->input('receiver_name');
+        $receiverName->email = $request->input('receiver_email');
+        $receiverName->phone = $request->input('receiver_phone');
+        $receiverName->address = $request->input('receiver_address');
+        $receiverName->save();
+
         $shipment_notification = new Shipment_Notification;
         $shipment_notification->shipment_id = Shipment::where('tracking_id', $tracking_id)->value('id');
         $shipment_notification->delivery_status = $request->input('delivery_status');
@@ -40,6 +72,7 @@ class ShipmentController extends Controller
         $shipment_notification->location = $request->input('location');
         $shipment_notification->created_at = $request->input('created_at');
         $shipment_notification->save();
+
         $shipments = Shipment::latest()->paginate(10);
         return view('admin.shipments', compact('shipments'));
     }
