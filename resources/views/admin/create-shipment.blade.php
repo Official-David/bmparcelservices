@@ -86,22 +86,33 @@
                             <div class="col-md-2">
                                 <div class="form-group">
                                     <label class="form-label">Origin</label>
-                                    <input type="text" class="form-control" name="origin"
+                                    <select class="form-control" name="origin"
                                         placeholder="Origin">
+                                        @foreach ($countries as $country)
+                                        <option value="{{$country->id}}">{{$country->name}}</option>
+                                        @endforeach
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
                                     <label class="form-label">Destination</label>
-                                    <input type="text" class="form-control" name="destination"
+                                    <select class="form-control" name="destination"
                                         placeholder="Destination">
+                                        @foreach ($countries as $country)
+                                        <option value="{{$country->id}}">{{$country->name}}</option>
+                                        @endforeach
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
                                     <label class="form-label">Type Of Shipment</label>
-                                    <input type="text" class="form-control" name="type_of_shipment"
+                                    <select class="form-control" name="type_of_shipment"
                                         placeholder="Type Of Shipment">
+                                        <option value='1'>Internaitional Shipment</option>
+                                        <option value='2'>Loacal Shipment</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-md-3">
@@ -114,8 +125,12 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label class="form-label">Shipment Mode</label>
-                                    <input type="text" class="form-control" name="shipment_mode"
+                                    <select class="form-control" name="shipment_mode"
                                         placeholder="Shipment Mode">
+                                    <option value='1'>Air Freight</option>
+                                    <option value='2'>Ocean Freight</option>
+                                    <option value='3'>Road Freight</option>
+                                    </select>
                                 </div>
                             </div>
                             <!-- END SHIPMENT INFO -->
@@ -144,14 +159,17 @@
                             <div class="col-md-2">
                                 <div class="form-group">
                                     <label class="form-label">Payment Mode</label>
-                                    <input type="text" class="form-control" name="payment_mode"
+                                    <select class="form-control" name="payment_mode"
                                         placeholder="Payment Mode">
+                                    <option value="1">Cash</option>
+                                    <option value="2">Cheque</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label class="form-label">Expected Delivery Date</label>
-                                    <input type="datetime-local" class="form-control" name="expected_delivery_date"
+                                    <input type="date" class="form-control" name="expected_delivery_date"
                                         placeholder="Expected Delivery Date">
                                 </div>
                             </div>
