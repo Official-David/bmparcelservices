@@ -149,18 +149,18 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <h5 class="text-center">Sender Information</h5>
-                                        <div>Name:</div>
-                                        <div>Email:</div>
-                                        <div>Phone:</div>
-                                        <div>Address:</div>
+                                        <div>Name: {{$senderInfo[0]->name}}</div>
+                                        <div>Email: {{$senderInfo[0]->email}}</div>
+                                        <div>Phone: {{$senderInfo[0]->phone}}</div>
+                                        <div>Address: {{$senderInfo[0]->address}}</div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <h5 class="text-center">Receiver Information</h5>
-                                        <div>Name:</div>
-                                        <div>Email:</div>
-                                        <div>Phone:</div>
-                                        <div>Address:</div>
+                                        <div>Name: {{$receiverInfo[0]->name}}</div>
+                                        <div>Email: {{$receiverInfo[0]->email}}</div>
+                                        <div>Phone: {{$receiverInfo[0]->phone}}</div>
+                                        <div>Address: {{$receiverInfo[0]->address}}</div>
                                     </div>
                                     <div class="divider"></div>
                                     <div class="col-md-12">
@@ -168,18 +168,18 @@
                                     </div>
 
                                     <div class="col-md-6">
-                                        <div>Origin:</div>
-                                        <div>Type Of Shipment:</div>                                        
-                                        <div>Shipment Mode:</div>
-                                        <div>Quantity:</div>
-                                        <div>Payment Mode:</div>
+                                        <div>Origin: {{$shipments[0]->origin}}</div>
+                                        <div>Type Of Shipment: {{$shipments[0]->type_of_shipment}}</div>                                        
+                                        <div>Shipment Mode: {{$shipments[0]->shipment_mode}}</div>
+                                        <div>Quantity: {{$shipments[0]->quantity}}</div>
+                                        <div>Payment Mode: {{$shipments[0]->payment_mode}}</div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div>Destination:</div>
-                                        <div>Carrier:</div>
-                                        <div>Product:</div>
-                                        <div>Weight:</div>
-                                        <div>Expected Delivery Date:</div>
+                                        <div>Destination: {{$shipments[0]->destination}}</div>
+                                        <div>Carrier: {{$shipments[0]->carrier}}</div>
+                                        <div>Product: {{$shipments[0]->product}}</div>
+                                        <div>Weight: {{$shipments[0]->weight}}</div>
+                                        <div>Expected Delivery Date: {{$shipments[0]->expected_delivery_date}}</div>
                                     </div>
                                 </div>
                             </div>
