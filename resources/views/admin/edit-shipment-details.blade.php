@@ -102,4 +102,5 @@
         text: '{{ session('shipmentSaved') }}'
     })
 </script>
+@endif
 @endsection
