@@ -14,4 +14,8 @@ class Shipment extends Model
         return $this->hasMany(Shipment_Notification::class);
     }
 
+    public function Country(){
+        return $this->belongsTo(Country::class);
+    }
+
 }
