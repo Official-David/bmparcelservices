@@ -6,10 +6,11 @@
     <div class="container content-area ">
         <!-- PAGE-HEADER -->
         <div class="page-header">
-            <h4 class="page-title">Shipment Details for <u>{{$shipment[0]->shipment_name}}</u> ({{$shipment[0]->tracking_id}})</h4>
+            <h4 class="page-title">Shipment Details for <u>{{ $shipment[0]->shipment_name }}</u>
+                ({{ $shipment[0]->tracking_id }})</h4>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Shipment</li>
+                <li class="breadcrumb-item active" aria-current="page"><a href="{{route('shipments')}}">Shipment</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Shipment Details</li>
             </ol>
         </div>
@@ -19,7 +20,9 @@
             <div class="col-md-12 col-lg-12">
                 <div class="card">
                     <div class="card-header">
-                        <div class="card-title">Shipments  <button class="btn btn-success btn-sm"><a href="{{route('update.shipment', $shipment[0]->id)}}" style="color:white">Update Shipment Info</a></button></div>
+                        <div class="card-title">Shipments <button class="btn btn-success btn-sm"><a
+                                    href="{{ route('update.shipment', $shipment[0]->id) }}" style="color:white">Update
+                                    Shipment Info</a></button></div>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
@@ -36,15 +39,25 @@
                                 <tbody>
                                     @forelse ($shipmentDetails as $shipmentDetail)
                                         <tr>
-                                            <td>{{ucfirst($shipmentDetail->delivery_status)}}</td>
-                                            <td><p style="word-wrap:break-word">{{ucfirst($shipmentDetail->message)}}</p></td>
-                                            <td>{{ucfirst($shipmentDetail->location)}}</td>
-                                            <td>{{$shipmentDetail->created_at}}</td>
-                                            <td><form action="{{route('delete.shipmentDetails', $shipmentDetail->id)}}" method="POST">@csrf <a class="pe-5 btn btn-success " a href="{{route('edit.shipmentDetails', $shipment[0]->id)}}"><span class="fa fa-edit"></span></a><button class="pe-5 btn btn-danger fa fa-trash" type="submit"></button></form></td>
+                                            <td>{{ ucfirst($shipmentDetail->delivery_status) }}</td>
+                                            <td>
+                                                <p style="word-wrap:break-word">{{ ucfirst($shipmentDetail->message) }}</p>
+                                            </td>
+                                            <td>{{ ucfirst($shipmentDetail->location) }}</td>
+                                            <td>{{ $shipmentDetail->created_at }}</td>
+                                            <td>
+                                                <form action="{{ route('delete.shipmentDetails', $shipmentDetail->id) }}"
+                                                    method="POST">@csrf
+                                                        <a class="pe-5 btn btn-success fa fa-edit" href="{{ route('edit.shipmentDetails', $shipment[0]->id) }}"></a>
+                                                    <button class="pe-5 btn btn-danger fa fa-trash" type="submit"></button>
+                                                </form>
+                                            </td>
                                             </a>
                                         </tr>
                                     @empty
-                                    <tr><td class="text-center" colspan="5">No Details Yet!</td></tr>
+                                        <tr>
+                                            <td class="text-center" colspan="5">No Details Yet!</td>
+                                        </tr>
                                     @endforelse
                                 </tbody>
                             </table>
