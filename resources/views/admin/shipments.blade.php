@@ -50,6 +50,9 @@
                                 </tbody>
                             </table>
                         </div>
+                        <div class="float-sm-end pagination-rounded justify-content-center mt-4">
+                                {{ $shipments->onEachSide(1)->links() }}
+                            </div>
                     </div>
                     <!-- TABLE WRAPPER -->
                 </div>
