@@ -52,7 +52,7 @@
 					<div class="container">
 						<div class="d-flex">
 						    <a id="horizontal-navtoggle" class="animated-arrow hor-toggle"><span></span></a>
-							<a class="header-brand" href="index.html">
+							<a class="header-brand" href="{{route('dashboard')}}">
 								<img src="{{asset('app/images/brand/logo.png')}}" class="header-brand-img desktop-logo" alt="Solic logo">
 								<img src="{{asset('app/images/brand/logo-1.png')}}" class="header-brand-img mobile-view-logo" alt="Solic logo">
 							</a><!-- LOGO -->
