@@ -472,7 +472,7 @@
         </div>
     </section>
     <!-- section close -->
-    <div class="call-to-action text-light">
+    {{-- <div class="call-to-action text-light">
         <div class="container">
             <div class="row">
                 <div class="col-md-9">
@@ -483,6 +483,6 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     </div>
 @endsection
