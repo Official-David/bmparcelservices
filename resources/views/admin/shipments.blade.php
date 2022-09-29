@@ -31,7 +31,7 @@
                                         <th>Tracking Id</th>
                                         <th>Shipment Status</th>
                                         <th>Created at</th>
-                                        <th>Action</th>
+                                        <th colspan="2">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -43,12 +43,13 @@
                                             </td>
                                             <td>{{ ucfirst($shipment->shipment_status) }}</td>
                                             <td>{{ ucfirst($shipment->created_at) }}</td>
-                                            <td class="text-center">
+                                            <td>
                                                 <form action="{{ route('delete.shipment', $shipment->id) }}" method="POST">
-                                                    @csrf <button class="btn btn-danger fa fa-trash"
-                                                        type="submit"></button></form>
+                                                    @csrf 
+                                                    <a class="btn btn-success fa fa-edit" href="{{route('edit.shipment', $shipment->id)}}"></a>
+                                                    <button class="btn btn-danger fa fa-trash" type="submit"></button>
+                                                </form>
                                             </td>
-                                            </a>
                                         </tr>
                                     @empty
                                         <tr>
