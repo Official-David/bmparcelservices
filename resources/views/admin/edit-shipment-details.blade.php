@@ -1,5 +1,5 @@
 @extends('admin.layouts.app')
-@section('title', 'Edit Shipment Details')
+@section('title', 'Edit Shipment Info')
 @section('content')
     <!-- CONTAINER -->
     <div class="container content-area relative">
@@ -9,7 +9,7 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Shipment</li>
-                <li class="breadcrumb-item active" aria-current="page">Edit Shipment Detail</li>
+                <li class="breadcrumb-item active" aria-current="page">Edit Shipment Info</li>
             </ol>
         </div>
         <!-- PAGE-HEADER END -->
@@ -19,7 +19,7 @@
                 <form class="card" action="{{route('update.shipmentDetails', [$shipment->id, $shipmentDetails[0]->id])}}" method="POST">
 					@csrf
                     <div class="card-header">
-                        <h3 class="card-title">Edit Shipment Detail</h3>
+                        <h3 class="card-title">Edit Shipment Info</h3>
                     </div>
                     <div class="card-body">
                         <div class="row">
