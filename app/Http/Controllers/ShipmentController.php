@@ -139,7 +139,15 @@ class ShipmentController extends Controller
         return back()->with(session()->flash('shipmentDeleted', 'Deleted Successfully'));
     }
 
-    // Add shipment details
+     // Goto add shipment info page
+     public function newShipmentDetails($id)
+     {
+         $shipment = Shipment::where('id', $id)->get();
+         $shipmentDetails = Shipment_Notification::where('shipment_id', $id)->get();
+         return view('admin.add-shipment-details', compact('shipmentDetails', 'shipment'));
+     }
+
+    // Insert shipment info to database
     public function addShipmentDetails(Request $request, $id)
     {
         $shipment = Shipment::where('id', $id)->first();
@@ -154,7 +162,9 @@ class ShipmentController extends Controller
         $shipment_notification->created_at = $request->input('created_at');
         $shipment_notification->save();
         // return view('admin.shipment-details', compact('shipmentDetails', 'shipment'));
-        return back()->with(session()->flash('shipmentDetailSaved', 'Added Successfully'));
+        // return back()->with(session()->flash('shipmentDetailSaved', 'Added Successfully'));
+        // Goto shipments page
+        return redirect()->route('shipment.details', $id)->with(session()->flash('shipmentUpdated', 'Changes Saved Successfully'));
     }
 
     // View shipment's details

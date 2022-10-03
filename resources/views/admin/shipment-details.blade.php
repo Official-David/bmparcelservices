@@ -21,7 +21,7 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="card-title">Shipments <button class="btn btn-success btn-sm"><a
-                                    href="{{ route('update.shipment', $shipment[0]->id) }}" style="color:white">Update
+                                    href="{{ route('new.shipment.details', $shipment[0]->id) }}" style="color:white">Update
                                     Shipment Info</a></button></div>
                     </div>
                     <div class="card-body">

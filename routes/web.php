@@ -41,6 +41,7 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('/shipment/{id}/edit', 'editShipment')->name('edit.shipment');
         Route::post('/shipment/{id}/update', 'updateShipment')->name('update.shipment');
         Route::post('/shipment/{id}/add-shipment-details', 'addShipmentDetails')->name('add.shipment.details');
+        Route::get('/shipment/{id}/new-shipment-details', 'newShipmentDetails')->name('new.shipment.details');
         Route::post('/shipment/{id}/delete', 'deleteShipment')->name('delete.shipment');
         Route::post('/shipment/{id}/details/delete', 'deleteShipmentDetails')->name('delete.shipmentDetails');
         Route::get('/shipment/{id}/details/edit', 'editShipmentDetails')->name('edit.shipmentDetails');
