@@ -176,20 +176,20 @@ class ShipmentController extends Controller
     }
 
     // Goto edit shipment details page
-    public function editShipmentDetails($id)
+    public function editShipmentDetails($id, $idd)
     {
         $shipment = Shipment::where('id', $id)->first();
-        $shipmentDetails = Shipment_Notification::where('shipment_id', $id)->get();
+        $shipmentDetails = Shipment_Notification::where('shipment_id', $id)->where('id', $idd)->get();
         return view('admin.edit-shipment-details', compact('shipment', 'shipmentDetails'));
     }
 
     // Update shipment details
-    public function updateShipmentDetail(Request $request, $id)
+    public function updateShipmentDetail(Request $request, $id, $idd)
     {
         $shipment = Shipment::where('id', $id)->first();
         $shipment->shipment_status = $request->input('shipment_status');
         $shipment->update();
-        $shipment_notification = Shipment_Notification::where('shipment_id', $id)->first();
+        $shipment_notification = Shipment_Notification::where('shipment_id', $id)->where('id', $idd)->first();
         $shipment_notification->delivery_status = $request->input('delivery_status');
         $shipment_notification->message = $request->input('message');
         $shipment_notification->location = $request->input('location');

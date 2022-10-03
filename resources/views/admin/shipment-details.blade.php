@@ -48,7 +48,7 @@
                                             <td>
                                                 <form action="{{ route('delete.shipmentDetails', $shipmentDetail->id) }}"
                                                     method="POST">@csrf
-                                                        <a class="pe-5 btn btn-success fa fa-edit" href="{{ route('edit.shipmentDetails', $shipment[0]->id) }}"></a>
+                                                        <a class="pe-5 btn btn-success fa fa-edit" href="{{ route('edit.shipmentDetails', [$shipment[0]->id, $shipmentDetail->id]) }}"></a>
                                                     <button class="pe-5 btn btn-danger fa fa-trash" type="submit"></button>
                                                 </form>
                                             </td>

@@ -16,7 +16,7 @@
         <!-- ROW OPEN -->
         <div class="row">
             <div class="col-lg-12">
-                <form class="card" action="{{route('update.shipmentDetails', $shipment->id)}}" method="POST">
+                <form class="card" action="{{route('update.shipmentDetails', [$shipment->id, $shipmentDetails[0]->id])}}" method="POST">
 					@csrf
                     <div class="card-header">
                         <h3 class="card-title">Edit Shipment Detail</h3>
