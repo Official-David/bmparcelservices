@@ -202,7 +202,7 @@
             <!--End .col-lg-6-->
             <div class="col-12 col-lg-6 offset-lg-1">
               <div class="prief-set prief-set-2">
-                <p>We pride ourselves on providing the best transport and shipping services available allover the world. Our skilled personnal and processing software, combined with decades of experience! Through integrated supply chain solutions, Equita drives sustainable competitive advantages to some of Australia's largest companies.</p>
+                <p>We pride ourselves on providing the best transport and shipping services available allover the world. Our skilled personnal and processing software, combined with decades of experience! Through integrated supply chain solutions, {{config('app.name')}} drives sustainable competitive advantages to some of Australia's largest companies.</p>
                 <ul class="advantages-list">
                   <li><i class="fas fa-check-circle"></i> Quality Control System</li>
                   <li><i class="fas fa-check-circle"></i> Unrivalled workmanship</li>

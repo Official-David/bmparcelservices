@@ -159,7 +159,7 @@
                 <div class="row">
                   <div class="col-12 col-lg-7">
                     <div class="block-left"> 
-                      <p>Equita Group is a representative logistics operator providing full range of service in the sphere of customs clearance transportation worldwide for any cargo</p>
+                      <p>{{config('app.name')}} is a representative logistics operator providing full range of service in the sphere of customs clearance transportation worldwide for any cargo</p>
                       <p>We pride ourselves on providing the best transport and shipping services available allover the world. Our skilled personnel, utilising the latest communications, tracking and combined with experience through integrated supply chain solutions!</p>
                     </div>
                   </div>
@@ -216,7 +216,7 @@
             <!--End .col-lg-6-->
             <div class="col-12"> 
               <div class="contact-panel">
-                <div class="contact-types"> <a class="button quote-btn" href="javascript:void(0)" data-form="quoteFormActive"> <i class="flaticon-020-order"> </i><span>request a quote</span></a><a class="button track-btn active" href="javascript:void(0)" data-form="trackFormActive"> <i class="flaticon-009-shipping-1"> </i><span>track &amp; trace</span></a></div>
+                <div class="contact-types"> <a class="button track-btn active" href="javascript:void(0)" data-form="trackFormActive"> <i class="flaticon-009-shipping-1"> </i><span>track &amp; trace</span></a></div>
                 <div class="contact-card">
                   <div class="contact-body trackFormActive">
                     <div class="row">
@@ -450,7 +450,7 @@
             <!--End .col-lg-5-->
             <div class="col-12 col-lg-6 offset-lg-1">
               <div class="prief-set">
-                <p>We pride ourselves on providing the best transport and shipping services available allover the world. Our skilled personnel, utilising communications, tracking and processing software, combined with decades of experience! Through integrated supply chain solutions, Equita drives sustainable competitive advantages to some of Australia's largest companies.</p>
+                <p>We pride ourselves on providing the best transport and shipping services available allover the world. Our skilled personnel, utilising communications, tracking and processing software, combined with decades of experience! Through integrated supply chain solutions, {{config('app.name')}} drives sustainable competitive advantages to some of Australia's largest companies.</p>
                 <ul class="advantages-list">
                   <li><i class="fas fa-check-circle"></i> Quality Control System</li>
                   <li><i class="fas fa-check-circle"></i> Unrivalled workmanship</li>
@@ -505,121 +505,6 @@
       -->
       <section class="cases-clients bg-parllax" id="cases-clients-1">
         <div class="cases-standard">
-          <div class="container">
-            <div class="heading text-center">
-              <p class="heading-subtitle">Explore Recent Works</p>
-              <h2 class="heading-title">featured projects</h2>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <div class="carousel owl-carousel carousel-navs carousel-dots" data-slide="3" data-slide-rs="1" data-autoplay="true" data-nav="true" data-dots="false" data-space="30" data-loop="true" data-speed="3000">
-                  <div class="case-item">
-                    <div class="case-item-warp">
-                      <div class="case-img"><img src="assets/images/work/full/1.jpg" alt="work Item Image"/></div>
-                      <!-- End .work-img-->
-                      <div class="case-content"> 
-                        <div class="case-title">
-                          <h4><a href="case-study-single.html">floride chemical factory</a></h4>
-                        </div>
-                        <div class="case-cat"><a href="javascript:void(0)">analytics</a><a href="javascript:void(0)">optimization</a></div>
-                        <div class="case-desc">
-                          <p>We understand that data is the greatest asset when it comes to analyzing and optimizing your supply chain performance.</p>
-                        </div>
-                        <div class="case-more"><a href="case-study-single.html"><i class="icon-arrow-right"></i> explore case study</a></div>
-                      </div>
-                      <!-- End .work-content-->
-                    </div>
-                  </div>
-                  <div class="case-item">
-                    <div class="case-item-warp">
-                      <div class="case-img"><img src="assets/images/work/full/2.jpg" alt="work Item Image"/></div>
-                      <!-- End .work-img-->
-                      <div class="case-content"> 
-                        <div class="case-title">
-                          <h4><a href="case-study-single.html">warehouse inventory</a></h4>
-                        </div>
-                        <div class="case-cat"><a href="javascript:void(0)">warehousing</a><a href="javascript:void(0)">distrbution</a></div>
-                        <div class="case-desc">
-                          <p>Cost savings is crucial, innovative technology minimizes your overall spend by utilizing an schedule.</p>
-                        </div>
-                        <div class="case-more"><a href="case-study-single.html"><i class="icon-arrow-right"></i> explore case study</a></div>
-                      </div>
-                      <!-- End .work-content-->
-                    </div>
-                  </div>
-                  <div class="case-item">
-                    <div class="case-item-warp">
-                      <div class="case-img"><img src="assets/images/work/full/3.jpg" alt="work Item Image"/></div>
-                      <!-- End .work-img-->
-                      <div class="case-content"> 
-                        <div class="case-title">
-                          <h4><a href="case-study-single.html">Minimize Manufacturing</a></h4>
-                        </div>
-                        <div class="case-cat"><a href="javascript:void(0)">logistics</a><a href="javascript:void(0)">analytics</a></div>
-                        <div class="case-desc">
-                          <p>Our Group has been building relationships and projects that last. Serving an impressive list of long-term.</p>
-                        </div>
-                        <div class="case-more"><a href="case-study-single.html"><i class="icon-arrow-right"></i> explore case study</a></div>
-                      </div>
-                      <!-- End .work-content-->
-                    </div>
-                  </div>
-                  <div class="case-item">
-                    <div class="case-item-warp">
-                      <div class="case-img"><img src="assets/images/work/full/1.jpg" alt="work Item Image"/></div>
-                      <!-- End .work-img-->
-                      <div class="case-content"> 
-                        <div class="case-title">
-                          <h4><a href="case-study-single.html">floride chemical factory</a></h4>
-                        </div>
-                        <div class="case-cat"><a href="javascript:void(0)">analytics</a><a href="javascript:void(0)">optimization</a></div>
-                        <div class="case-desc">
-                          <p>We understand that data is the greatest asset when it comes to analyzing and optimizing your supply chain performance.</p>
-                        </div>
-                        <div class="case-more"><a href="case-study-single.html"><i class="icon-arrow-right"></i> explore case study</a></div>
-                      </div>
-                      <!-- End .work-content-->
-                    </div>
-                  </div>
-                  <div class="case-item">
-                    <div class="case-item-warp">
-                      <div class="case-img"><img src="assets/images/work/full/2.jpg" alt="work Item Image"/></div>
-                      <!-- End .work-img-->
-                      <div class="case-content"> 
-                        <div class="case-title">
-                          <h4><a href="case-study-single.html">warehouse inventory</a></h4>
-                        </div>
-                        <div class="case-cat"><a href="javascript:void(0)">warehousing</a><a href="javascript:void(0)">distrbution</a></div>
-                        <div class="case-desc">
-                          <p>Cost savings is crucial, innovative technology minimizes your overall spend by utilizing an schedule.</p>
-                        </div>
-                        <div class="case-more"><a href="case-study-single.html"><i class="icon-arrow-right"></i> explore case study</a></div>
-                      </div>
-                      <!-- End .work-content-->
-                    </div>
-                  </div>
-                  <div class="case-item">
-                    <div class="case-item-warp">
-                      <div class="case-img"><img src="assets/images/work/full/3.jpg" alt="work Item Image"/></div>
-                      <!-- End .work-img-->
-                      <div class="case-content"> 
-                        <div class="case-title">
-                          <h4><a href="case-study-single.html">Minimize Manufacturing</a></h4>
-                        </div>
-                        <div class="case-cat"><a href="javascript:void(0)">logistics</a><a href="javascript:void(0)">analytics</a></div>
-                        <div class="case-desc">
-                          <p>Our Group has been building relationships and projects that last. Serving an impressive list of long-term.</p>
-                        </div>
-                        <div class="case-more"><a href="case-study-single.html"><i class="icon-arrow-right"></i> explore case study</a></div>
-                      </div>
-                      <!-- End .work-content-->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End .row-->
-          </div>
         </div>
         <div class="clients clients-carousel clients-1 pt-0">
           <div class="container">
@@ -628,7 +513,7 @@
                 <div class="heading heading-5 text-center">
                   <p class="heading-subtitle">join us today</p>
                   <h2 class="heading-title">our partners</h2>
-                  <p class="heading-desc">Our skilled personnel, utilising the latest communications, tracking and processing software, combined with decades of experience! Through integrated supply chain solutions, Equita drives sustainable competitive advantages to some of Australia's largest companies.</p>
+                  <p class="heading-desc">Our skilled personnel, utilising the latest communications, tracking and processing software, combined with decades of experience! Through integrated supply chain solutions, {{config('app.name')}} drives sustainable competitive advantages to some of Australia's largest companies.</p>
                 </div>
               </div>
             </div>
@@ -675,7 +560,7 @@
                       <div class="testimonial-img"><img src="assets/images/testimonial/3.jpg" alt="Testimonial Author"/></div>
                       <div class="testimonial-content">
                         <div class="testimonial-rating"><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i></div>
-                        <p>Equita Logistics International customer service is some of the best we have ever had with ocean  we like to ship as much as possible with you all.</p>
+                        <p>{{config('app.name')}} Logistics International customer service is some of the best we have ever had with ocean  we like to ship as much as possible with you all.</p>
                         <div class="testimonial-meta">
                           <h4>John R Peter</h4>
                           <p>movein</p>
@@ -691,7 +576,7 @@
                       <div class="testimonial-img"><img src="assets/images/testimonial/4.jpg" alt="Testimonial Author"/></div>
                       <div class="testimonial-content">
                         <div class="testimonial-rating"><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i></div>
-                        <p>Equita Logistics International customer service is some of the best we have ever had with ocean  we like to ship as much as possible with you all.</p>
+                        <p>{{config('app.name')}} Logistics International customer service is some of the best we have ever had with ocean  we like to ship as much as possible with you all.</p>
                         <div class="testimonial-meta">
                           <h4>James Wane</h4>
                           <p>James Wane</p>
@@ -707,7 +592,7 @@
                       <div class="testimonial-img"><img src="assets/images/testimonial/3.jpg" alt="Testimonial Author"/></div>
                       <div class="testimonial-content">
                         <div class="testimonial-rating"><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i></div>
-                        <p>Equita Logistics International customer service is some of the best we have ever had with ocean we like to ship as much as possible with you all.</p>
+                        <p>{{config('app.name')}} customer service is some of the best we have ever had with ocean we like to ship as much as possible with you all.</p>
                         <div class="testimonial-meta">
                           <h4>Marko Smith</h4>
                           <p>Aify Agency</p>
@@ -728,139 +613,12 @@
       Blog #1 Section
       ============================
       -->
-      <section class="blog blog-grid" id="blog-1">
-        <div class="container">
-          <div class="row"> 
-            <div class="col-12 col-lg-6 offset-lg-3">
-              <div class="heading heading-7 text-center">
-                <p class="heading-subtitle">insight and trends</p>
-                <h2 class="heading-title">recent articles</h2>
-                <p class="heading-desc">Follow our latest news and thoughts which focuses exclusively on  insight, industry trends, top news headlines.</p>
-              </div>
-            </div>
-          </div>
-          <!-- End .row-->
-          <div class="row">
-            <div class=" col-12 col-md-6 col-lg-4">
-              <div class="blog-entry">
-                <div class="entry-img"><a href="https://demo.zytheme.com/equita/blog-single.html"><img src="assets/images/blog/grid/1.jpg" alt="Importers achieve cost savings through the First Sale rule!"/></a></div>
-                <!-- End .entry-img-->
-                <!-- End .entry-date-->
-                <div class="entry-content">
-                  <div class="entry-category"><a href="javascript:void(0)">cargo</a><a href="javascript:void(0)">insights</a>
-                  </div>
-                  <div class="entry-title">
-                    <h4><a href="https://demo.zytheme.com/equita/blog-single.html">Importers achieve cost savings through the First Sale rule!</a></h4>
-                  </div>
-                  <div class="entry-date"><span class="month">jan 20</span><span class="date">2021</span></div>
-                  <div class="entry-bio">
-                    <p>The trade war currently ensuing between the nations around the globe, fiercely with China, shows no signs of the first set of tariffs levied against solar...</p>
-                  </div>
-                  <div class="entry-more"> <a href="javascript:void(0)">Read more</a></div>
-                </div>
-              </div>
-              <!-- End .entry-content-->
-            </div>
-            <div class=" col-12 col-md-6 col-lg-4">
-              <div class="blog-entry">
-                <div class="entry-img"><a href="https://demo.zytheme.com/equita/blog-single.html"><img src="assets/images/blog/grid/2.jpg" alt="Cargo flow through better supply chain visibility, control."/></a></div>
-                <!-- End .entry-img-->
-                <!-- End .entry-date-->
-                <div class="entry-content">
-                  <div class="entry-category"><a href="javascript:void(0)">warehouse</a><a href="javascript:void(0)">construction</a>
-                  </div>
-                  <div class="entry-title">
-                    <h4><a href="https://demo.zytheme.com/equita/blog-single.html">Cargo flow through better supply chain visibility, control.</a></h4>
-                  </div>
-                  <div class="entry-date"><span class="month">jan 23</span><span class="date">2021</span></div>
-                  <div class="entry-bio">
-                    <p>Global provider connected products for consumers, and enterprises worldwide, supply chain control is everything, provide visibility and traceability needed for...</p>
-                  </div>
-                  <div class="entry-more"> <a href="javascript:void(0)">Read more</a></div>
-                </div>
-              </div>
-              <!-- End .entry-content-->
-            </div>
-            <div class=" col-12 col-md-6 col-lg-4">
-              <div class="blog-entry">
-                <div class="entry-img"><a href="https://demo.zytheme.com/equita/blog-single.html"><img src="assets/images/blog/grid/3.jpg" alt="Importance of specialized focus in Projects, Oil &amp; Gas Logistics?"/></a></div>
-                <!-- End .entry-img-->
-                <!-- End .entry-date-->
-                <div class="entry-content">
-                  <div class="entry-category"><a href="javascript:void(0)">logistics</a><a href="javascript:void(0)">distrbution</a>
-                  </div>
-                  <div class="entry-title">
-                    <h4><a href="https://demo.zytheme.com/equita/blog-single.html">Importance of specialized focus in Projects, Oil &amp; Gas Logistics?</a></h4>
-                  </div>
-                  <div class="entry-date"><span class="month">jan 24</span><span class="date">2021</span></div>
-                  <div class="entry-bio">
-                    <p>Our team provides  skilled &amp; experienced managers who know the intricacies of this vertical and focus on providing  solutions in Oil &amp; Gas sector...</p>
-                  </div>
-                  <div class="entry-more"> <a href="javascript:void(0)">Read more</a></div>
-                </div>
-              </div>
-              <!-- End .entry-content-->
-            </div>
-          </div>
-          <!-- End .row-->
-        </div>
-        <!-- End .container-->
-      </section>
+     
       <!--
       ============================
       Google Maps Section
       ============================
       -->
-      <section class="map map-3" id="map-1">
-        <iframe class="map-gray map-gray" src="https://maps.google.com/maps?q=Pioneer%20Works&amp;t=m&amp;z=13&amp;output=embed&amp;iwloc=near" width="600" height="450" style="border:0"> </iframe>
-        <div class="container"> 
-          <div class="row"> 
-            <div class="col-12 col-lg-4">
-              <div class="accordion accordion-4" id="accordion01">
-                <h4 class="panel">global locations</h4>
-                <div class="card">
-                  <div class="card-heading"><a class="card-link collapsed" data-toggle="collapse" data-parent="#accordion01" href="#collapse01-1">london office</a></div>
-                  <div class="collapse show" id="collapse01-1" data-parent="#accordion01">
-                    <div class="card-body">
-                      <ul class="list-unstyled info">
-                        <li><span class="fas fa-map-marker-alt"></span><a href="javascript:void(0)">New York 11226 United States.</a></li>
-                        <li><span class="fas fa-envelope"></span><a href="mailto::Equita@7oroof.com">Equita@7oroof.com</a></li>
-                        <li><span class="fas fa-phone-alt"></span><a href="tel:01061245741">(002) 01061245741</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-heading"><a class="card-link collapsed" data-toggle="collapse" data-parent="#accordion01" href="#collapse01-2">berlin office</a></div>
-                  <div class="collapse" id="collapse01-2" data-parent="#accordion01">
-                    <div class="card-body">
-                      <ul class="list-unstyled info">
-                        <li><span class="fas fa-map-marker-alt"></span><a href="javascript:void(0)">New York 11226 United States.</a></li>
-                        <li><span class="fas fa-envelope"></span><a href="mailto::Equita@7oroof.com">Equita@7oroof.com</a></li>
-                        <li><span class="fas fa-phone-alt"></span><a href="tel:01061245741">(002) 01061245741</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-heading"><a class="card-link collapsed" data-toggle="collapse" data-parent="#accordion01" href="#collapse01-3">manchester office</a></div>
-                  <div class="collapse" id="collapse01-3" data-parent="#accordion01">
-                    <div class="card-body">
-                      <ul class="list-unstyled info">
-                        <li><span class="fas fa-map-marker-alt"></span><a href="javascript:void(0)">New York 11226 United States.</a></li>
-                        <li><span class="fas fa-envelope"></span><a href="mailto::Equita@7oroof.com">Equita@7oroof.com</a></li>
-                        <li><span class="fas fa-phone-alt"></span><a href="tel:01061245741">(002) 01061245741</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End .row-->
-        </div>
-        <!-- End .container-->
-      </section>
       <!--
       ============================
       Footer #1

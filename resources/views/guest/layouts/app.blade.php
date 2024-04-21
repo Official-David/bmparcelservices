@@ -42,8 +42,8 @@
             <header class="header header-1 header-transparent" id="navbar-spy">
                 <nav class="navbar navbar-expand-lg  navbar-bordered navbar-sticky" id="primary-menu">
                     <div class="container"><a class="navbar-brand" href="{{ route('home') }}"><img
-                                class="logo logo-light" src="assets/images/logo/logo-light.png" alt="Equita Logo" /><img
-                                class="logo logo-dark" src="assets/images/logo/logo-dark.png" alt="Equita Logo" /></a>
+                                class="logo logo-light" src="assets/images/logo/logo-light.png" alt="{{config('app.name')}} Logo" /><img
+                                class="logo logo-dark" src="assets/images/logo/logo-dark.png" alt="{{config('app.name')}} Logo" /></a>
                         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
                             data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
                             aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -224,7 +224,7 @@
                             <div class="col-12 col-lg-9 col-xl-8">
                                 <div class="widget-newsletter">
                                     <div class="widget-content">
-                                        <p>Sign up for industry alerts,<br />insights from Equita.</p>
+                                        <p>Sign up for industry alerts,<br />insights from {{config('app.name')}}.</p>
                                         <form class="form-newsletter mailchimp">
                                             <input class="form-control" type="email" name="email"
                                                 placeholder="Your Email Address" />
@@ -245,7 +245,7 @@
                                     <h5>about</h5>
                                 </div>
                                 <div class="widget-content">
-                                    <p>Equita is a representative logistics operator providing full range of service in
+                                    <p>{{config('app.name')}} is a representative logistics operator providing full range of service in
                                         the sphere of customs cargo and transportation worldwide.</p>
                                     <!-- Start .module-social-->
                                     <div class="module module-social"><a class="share-facebook"
@@ -313,8 +313,7 @@
                 <div class="footer-bottom">
                     <div class="row">
                         <div class="col-md-12 col-md-12 text--center footer-copyright">
-                            <div class="copyright"><span>&copy; Equita, With Love by</span><a
-                                    href="https://1.envato.market/kP9BV"> Zytheme.com</a></div>
+                            <div class="copyright"><span>&copy; {{config('app.name')}}, With Love by</span></div>
                         </div>
                     </div>
                     <!--  End .row-->
