@@ -562,7 +562,7 @@
                         <div class="testimonial-rating"><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i></div>
                         <p>{{config('app.name')}} customer service is some of the best we have ever had with ocean  we like to ship as much as possible with you all.</p>
                         <div class="testimonial-meta">
-                          <h4>John R Peter</h4>
+                          <h4>John  Peter</h4>
                           <p>movein</p>
                         </div>
                       </div>
