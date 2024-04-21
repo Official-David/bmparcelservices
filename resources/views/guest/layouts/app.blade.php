@@ -50,7 +50,7 @@
                         <!--  Collect the nav links, forms, and other content for toggling  -->
                         <div class="collapse navbar-collapse" id="navbarContent">
                             <ul class="navbar-nav ml-auto">
-                                <li class="nav-item active"><a href="#"><span>Home</span></a>
+                                <li class="nav-item active"><a href="{{ route('home') }}"><span>Home</span></a>
                                 </li>
                                 <li class="nav-item has-dropdown"><a class="dropdown-toggle" href="#"
                                         data-toggle="dropdown"><span>company</span></a>
