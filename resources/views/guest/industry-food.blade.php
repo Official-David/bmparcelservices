@@ -202,7 +202,7 @@
             <!--End .col-lg-6-->
             <div class="col-12 col-lg-6 offset-lg-1">
               <div class="prief-set prief-set-2">
-                <p>We pride ourselves on providing the best transport and shipping services available allover the world. Our skilled personnal and processing software, combined with decades of experience! Through integrated supply chain solutions, Equita drives sustainable competitive advantages to some of Australia's largest companies.</p>
+                <p>We pride ourselves on providing the best transport and shipping services available allover the world. Our skilled personnal and processing software, combined with decades of experience! Through integrated supply chain solutions, {{config('app.name')}}drives sustainable competitive advantages to some of Australia's largest companies.</p>
                 <ul class="advantages-list">
                   <li><i class="fas fa-check-circle"></i> Quality Control System</li>
                   <li><i class="fas fa-check-circle"></i> Unrivalled workmanship</li>
@@ -382,7 +382,7 @@
                       <div class="testimonial-img"><img src="assets/images/testimonial/3.jpg" alt="Testimonial Author"/></div>
                       <div class="testimonial-content">
                         <div class="testimonial-rating"><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i></div>
-                        <p>Equita Logistics International customer service is some of the best we have ever had with ocean we like to ship as much as possible with you all.</p>
+                        <p>{{config('app.name')}} customer service is some of the best we have ever had with ocean we like to ship as much as possible with you all.</p>
                         <div class="testimonial-meta">
                           <h4>John R Peter</h4>
                           <p>movein</p>
@@ -398,7 +398,7 @@
                       <div class="testimonial-img"><img src="assets/images/testimonial/4.jpg" alt="Testimonial Author"/></div>
                       <div class="testimonial-content">
                         <div class="testimonial-rating"><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i></div>
-                        <p>Equita Logistics International customer service is some of the best we have ever had with ocean we like to ship as much as possible with you all.</p>
+                        <p>{{config('app.name')}} customer service is some of the best we have ever had with ocean we like to ship as much as possible with you all.</p>
                         <div class="testimonial-meta">
                           <h4>James Wane</h4>
                           <p>Aleko Company</p>
@@ -414,7 +414,7 @@
                       <div class="testimonial-img"><img src="assets/images/testimonial/3.jpg" alt="Testimonial Author"/></div>
                       <div class="testimonial-content">
                         <div class="testimonial-rating"><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i></div>
-                        <p>Equita Logistics International customer service is some of the best we have ever had with ocean we like to ship as much as possible with you all.</p>
+                        <p>{{config('app.name')}} customer service is some of the best we have ever had with ocean we like to ship as much as possible with you all.</p>
                         <div class="testimonial-meta">
                           <h4>Marko Smith</h4>
                           <p>Aify Agency</p>
@@ -430,7 +430,7 @@
                       <div class="testimonial-img"><img src="assets/images/testimonial/4.jpg" alt="Testimonial Author"/></div>
                       <div class="testimonial-content">
                         <div class="testimonial-rating"><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i></div>
-                        <p>Equita Logistics International customer service is some of the best we have ever had with ocean we like to ship as much as possible with you all.</p>
+                        <p>{{config('app.name')}} customer service is some of the best we have ever had with ocean we like to ship as much as possible with you all.</p>
                         <div class="testimonial-meta">
                           <h4>Marko Smith</h4>
                           <p>movein</p>
@@ -446,7 +446,7 @@
                       <div class="testimonial-img"><img src="assets/images/testimonial/3.jpg" alt="Testimonial Author"/></div>
                       <div class="testimonial-content">
                         <div class="testimonial-rating"><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i></div>
-                        <p>Equita Logistics International customer service is some of the best we have ever had with ocean we like to ship as much as possible with you all.</p>
+                        <p>{{config('app.name')}} customer service is some of the best we have ever had with ocean we like to ship as much as possible with you all.</p>
                         <div class="testimonial-meta">
                           <h4>Marko Smith</h4>
                           <p>Aleko Company</p>
@@ -462,7 +462,7 @@
                       <div class="testimonial-img"><img src="assets/images/testimonial/4.jpg" alt="Testimonial Author"/></div>
                       <div class="testimonial-content">
                         <div class="testimonial-rating"><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i></div>
-                        <p>Equita Logistics International customer service is some of the best we have ever had with ocean we like to ship as much as possible with you all.</p>
+                        <p>{{config('app.name')}} customer service is some of the best we have ever had with ocean we like to ship as much as possible with you all.</p>
                         <div class="testimonial-meta">
                           <h4>Marko Smith</h4>
                           <p>Aify Agency</p>

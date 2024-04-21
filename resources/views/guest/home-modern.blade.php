@@ -7,7 +7,7 @@
     <meta name="author" content="Ayman Fikry"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <meta name="description" content="Multi-purpose Business html5 template"/>
-    <title>Home Modern - Equita Logistics Cargo HTML5 Template</title>
+    <title>Home Modern - {{config('app.name')}}Logistics Cargo HTML5 Template</title>
     <link href="assets/images/favicon/favicon.png" rel="icon"/>
     <!--  Fonts ==
     -->
@@ -40,7 +40,7 @@
         <div class="container">
           <!-- Start .top-bar-->
           <div class="top-bar">
-            <div class="block-left"> <a class="navbar-brand" href="index.html"><img class="logo logo-light" src="assets/images/logo/logo-light.png" alt="Equita Logo"/><img class="logo logo-dark" src="assets/images/logo/logo-dark.png" alt="Equita Logo"/></a>
+            <div class="block-left"> <a class="navbar-brand" href="index.html"><img class="logo logo-light" src="assets/images/logo/logo-light.png" alt="{{config('app.name')}}Logo"/><img class="logo logo-dark" src="assets/images/logo/logo-dark.png" alt="{{config('app.name')}}Logo"/></a>
               <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             </div>
             <div class="block-right">
@@ -314,7 +314,7 @@
                    Individually Assess <br/>Each Plan And Offer <br/>Optimal Solutions!</h2><a class="btn btn--transparent btn--inverse" href="javascript:void(0)">our services</a>
               </div>
               <div class="col-12 col-lg-6 offset-lg-1">
-                <p class="heading-desc">Skilled personnel, utilising communications, tracking processing software, combined with decades of experience! Through an integrated supply chain solutions, Equita drives sustainable competitive advantages to some of Australia's largest companies.</p>
+                <p class="heading-desc">Skilled personnel, utilising communications, tracking processing software, combined with decades of experience! Through an integrated supply chain solutions, {{config('app.name')}}drives sustainable competitive advantages to some of Australia's largest companies.</p>
                 <div class="counters-container">
                   <div class="counter counter-2">
                     <div class="counter-icon"> <i class="flaticon-018-packaging"></i></div>
@@ -734,7 +734,7 @@
                     <div class="testimonial-body">
                       <div class="testimonial-content">
                         <div class="testimonial-rating"><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i></div>
-                        <p>Equita Logistics International customer service is some of the best we have ever had with ocean  we like to ship as much as possible with you all.</p>
+                        <p>{{config('app.name')}} customer service is some of the best we have ever had with ocean  we like to ship as much as possible with you all.</p>
                         <div class="img-meta-container">
                           <div class="testimonial-img"><img src="assets/images/testimonial/3.jpg" alt="Testimonial Author"/></div>
                           <div class="testimonial-meta">
@@ -752,7 +752,7 @@
                     <div class="testimonial-body">
                       <div class="testimonial-content">
                         <div class="testimonial-rating"><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i></div>
-                        <p>Equita Logistics International customer service is some of the best we have ever had with ocean  we like to ship as much as possible with you all.</p>
+                        <p>{{config('app.name')}} customer service is some of the best we have ever had with ocean  we like to ship as much as possible with you all.</p>
                         <div class="img-meta-container">
                           <div class="testimonial-img"><img src="assets/images/testimonial/4.jpg" alt="Testimonial Author"/></div>
                           <div class="testimonial-meta">
@@ -770,7 +770,7 @@
                     <div class="testimonial-body">
                       <div class="testimonial-content">
                         <div class="testimonial-rating"><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i></div>
-                        <p>Equita Logistics International customer service is some of the best we have ever had with ocean we like to ship as much as possible with you all.</p>
+                        <p>{{config('app.name')}} customer service is some of the best we have ever had with ocean we like to ship as much as possible with you all.</p>
                         <div class="img-meta-container">
                           <div class="testimonial-img"><img src="assets/images/testimonial/3.jpg" alt="Testimonial Author"/></div>
                           <div class="testimonial-meta">
@@ -788,7 +788,7 @@
                     <div class="testimonial-body">
                       <div class="testimonial-content">
                         <div class="testimonial-rating"><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i></div>
-                        <p>Equita Logistics International customer service is some of the best we have ever had with ocean  we like to ship as much as possible with you all.</p>
+                        <p>{{config('app.name')}} customer service is some of the best we have ever had with ocean  we like to ship as much as possible with you all.</p>
                         <div class="img-meta-container">
                           <div class="testimonial-img"><img src="assets/images/testimonial/3.jpg" alt="Testimonial Author"/></div>
                           <div class="testimonial-meta">
@@ -806,7 +806,7 @@
                     <div class="testimonial-body">
                       <div class="testimonial-content">
                         <div class="testimonial-rating"><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i></div>
-                        <p>Equita Logistics International customer service is some of the best we have ever had with ocean  we like to ship as much as possible with you all.</p>
+                        <p>{{config('app.name')}} customer service is some of the best we have ever had with ocean  we like to ship as much as possible with you all.</p>
                         <div class="img-meta-container">
                           <div class="testimonial-img"><img src="assets/images/testimonial/4.jpg" alt="Testimonial Author"/></div>
                           <div class="testimonial-meta">
@@ -824,7 +824,7 @@
                     <div class="testimonial-body">
                       <div class="testimonial-content">
                         <div class="testimonial-rating"><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i></div>
-                        <p>Equita Logistics International customer service is some of the best we have ever had with ocean we like to ship as much as possible with you all.</p>
+                        <p>{{config('app.name')}} customer service is some of the best we have ever had with ocean we like to ship as much as possible with you all.</p>
                         <div class="img-meta-container">
                           <div class="testimonial-img"><img src="assets/images/testimonial/3.jpg" alt="Testimonial Author"/></div>
                           <div class="testimonial-meta">
@@ -961,7 +961,7 @@
                   <h5>about</h5>
                 </div>
                 <div class="widget-content">
-                  <p>Equita is a representative logistics operator providing full range of service in the sphere of customs cargo and transportation worldwide.</p>
+                  <p>{{config('app.name')}}is a representative logistics operator providing full range of service in the sphere of customs cargo and transportation worldwide.</p>
                   <!-- Start .module-social-->
                   <div class="module module-social"><a class="share-facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"> </i></a><a class="share-instagram" href="javascript:void(0)"><i class="fab fa-instagram"></i></a><a class="share-twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i></a></div>
                   <!-- End .module-social-->

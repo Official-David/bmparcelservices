@@ -88,7 +88,7 @@
                    Individually Assess <br/>Each Plan And Offer <br/>Optimal Solutions!</h2><a class="btn btn--transparent btn--inverse" href="javascript:void(0)">our services</a>
               </div>
               <div class="col-12 col-lg-6 offset-lg-1">
-                <p class="heading-desc">Skilled personnel, utilising communications, tracking processing software, combined with decades of experience! Through an integrated supply chain solutions, Equita drives sustainable competitive advantages to some of Australia's largest companies.</p>
+                <p class="heading-desc">Skilled personnel, utilising communications, tracking processing software, combined with decades of experience! Through an integrated supply chain solutions, {{config('app.name')}}drives sustainable competitive advantages to some of Australia's largest companies.</p>
                 <div class="counters-container">
                   <div class="counter counter-2">
                     <div class="counter-icon"> <i class="flaticon-018-packaging"></i></div>

@@ -6,7 +6,7 @@
     <meta name="author" content="Ayman Fikry"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <meta name="description" content="Multi-purpose Business html5 template"/>
-    <title>Blog - Equita Logistics Cargo HTML5 Template</title>
+    <title>Blog - {{config('app.name')}}Logistics Cargo HTML5 Template</title>
     <link href="assets/images/favicon/favicon.png" rel="icon"/>
     <!--  Fonts ==
     -->
@@ -37,7 +37,7 @@
       <!-- Start .header-1-->
       <header class="header header-1 header-transparent" id="navbar-spy">
         <nav class="navbar navbar-expand-lg  navbar-bordered navbar-sticky" id="primary-menu">
-          <div class="container"><a class="navbar-brand" href="index.html"><img class="logo logo-light" src="assets/images/logo/logo-light.png" alt="Equita Logo"/><img class="logo logo-dark" src="assets/images/logo/logo-dark.png" alt="Equita Logo"/></a>
+          <div class="container"><a class="navbar-brand" href="index.html"><img class="logo logo-light" src="assets/images/logo/logo-light.png" alt="{{config('app.name')}}Logo"/><img class="logo logo-dark" src="assets/images/logo/logo-dark.png" alt="{{config('app.name')}}Logo"/></a>
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <!--  Collect the nav links, forms, and other content for toggling  -->
             <div class="collapse navbar-collapse" id="navbarContent">
@@ -358,7 +358,7 @@
                   <h5>about</h5>
                 </div>
                 <div class="widget-content">
-                  <p>Equita is a representative logistics operator providing full range of service in the sphere of customs cargo and transportation worldwide.</p>
+                  <p>{{config('app.name')}}is a representative logistics operator providing full range of service in the sphere of customs cargo and transportation worldwide.</p>
                   <!-- Start .module-social-->
                   <div class="module module-social"><a class="share-facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"> </i></a><a class="share-instagram" href="javascript:void(0)"><i class="fab fa-instagram"></i></a><a class="share-twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i></a></div>
                   <!-- End .module-social-->

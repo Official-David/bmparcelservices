@@ -6,7 +6,7 @@
     <meta name="author" content="Ayman Fikry"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <meta name="description" content="Multi-purpose Business html5 template"/>
-    <title>Floride Chemicals Factory - Equita Logistics Cargo HTML5 Template</title>
+    <title>Floride Chemicals Factory - {{config('app.name')}}Logistics Cargo HTML5 Template</title>
     <link href="assets/images/favicon/favicon.png" rel="icon"/>
     <!--  Fonts ==
     -->
@@ -37,7 +37,7 @@
       <!-- Start .header-1-->
       <header class="header header-1 header-transparent" id="navbar-spy">
         <nav class="navbar navbar-expand-lg  navbar-bordered navbar-sticky" id="primary-menu">
-          <div class="container"><a class="navbar-brand" href="index.html"><img class="logo logo-light" src="assets/images/logo/logo-light.png" alt="Equita Logo"/><img class="logo logo-dark" src="assets/images/logo/logo-dark.png" alt="Equita Logo"/></a>
+          <div class="container"><a class="navbar-brand" href="index.html"><img class="logo logo-light" src="assets/images/logo/logo-light.png" alt="{{config('app.name')}}Logo"/><img class="logo logo-dark" src="assets/images/logo/logo-dark.png" alt="{{config('app.name')}}Logo"/></a>
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <!--  Collect the nav links, forms, and other content for toggling  -->
             <div class="collapse navbar-collapse" id="navbarContent">
@@ -278,7 +278,7 @@
                             <div class="testimonial-img"><img src="assets/images/testimonial/3.jpg" alt="Testimonial Author"/></div>
                             <div class="testimonial-content">
                               <div class="testimonial-rating"><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i></div>
-                              <p>Equita Logistics International customer service is some of the best we have ever had with ocean forwarders we like to ship as much as possible with you all.</p>
+                              <p>{{config('app.name')}} customer service is some of the best we have ever had with ocean forwarders we like to ship as much as possible with you all.</p>
                               <div class="testimonial-meta">
                                 <h4>John R Peter</h4>
                                 <p>movein</p>
@@ -294,7 +294,7 @@
                             <div class="testimonial-img"><img src="assets/images/testimonial/4.jpg" alt="Testimonial Author"/></div>
                             <div class="testimonial-content">
                               <div class="testimonial-rating"><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i></div>
-                              <p>Equita Logistics International customer service is some of the best we have ever had with ocean forwarders we like to ship as much as possible with you all.</p>
+                              <p>{{config('app.name')}} customer service is some of the best we have ever had with ocean forwarders we like to ship as much as possible with you all.</p>
                               <div class="testimonial-meta">
                                 <h4>James Wane</h4>
                                 <p>Aleko Company</p>
@@ -310,7 +310,7 @@
                             <div class="testimonial-img"><img src="assets/images/testimonial/3.jpg" alt="Testimonial Author"/></div>
                             <div class="testimonial-content">
                               <div class="testimonial-rating"><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i></div>
-                              <p>Equita Logistics International customer service is some of the best we have ever had with ocean forwarders we like to ship as much as possible with you all.</p>
+                              <p>{{config('app.name')}} customer service is some of the best we have ever had with ocean forwarders we like to ship as much as possible with you all.</p>
                               <div class="testimonial-meta">
                                 <h4>Marko Smith</h4>
                                 <p>Aify Agency</p>
@@ -326,7 +326,7 @@
                             <div class="testimonial-img"><img src="assets/images/testimonial/4.jpg" alt="Testimonial Author"/></div>
                             <div class="testimonial-content">
                               <div class="testimonial-rating"><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i></div>
-                              <p>Equita Logistics International customer service is some of the best we have ever had with ocean forwarders we like to ship as much as possible with you all.</p>
+                              <p>{{config('app.name')}} customer service is some of the best we have ever had with ocean forwarders we like to ship as much as possible with you all.</p>
                               <div class="testimonial-meta">
                                 <h4>Marko Smith</h4>
                                 <p>Aify Agency</p>
@@ -342,7 +342,7 @@
                             <div class="testimonial-img"><img src="assets/images/testimonial/3.jpg" alt="Testimonial Author"/></div>
                             <div class="testimonial-content">
                               <div class="testimonial-rating"><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i></div>
-                              <p>Equita Logistics International customer service is some of the best we have ever had with ocean forwarders we like to ship as much as possible with you all.</p>
+                              <p>{{config('app.name')}} customer service is some of the best we have ever had with ocean forwarders we like to ship as much as possible with you all.</p>
                               <div class="testimonial-meta">
                                 <h4>Marko Smith</h4>
                                 <p>Aify Agency</p>
@@ -358,7 +358,7 @@
                             <div class="testimonial-img"><img src="assets/images/testimonial/4.jpg" alt="Testimonial Author"/></div>
                             <div class="testimonial-content">
                               <div class="testimonial-rating"><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i><i class="icon-Star-1"></i></div>
-                              <p>Equita Logistics International customer service is some of the best we have ever had with ocean forwarders we like to ship as much as possible with you all.</p>
+                              <p>{{config('app.name')}} customer service is some of the best we have ever had with ocean forwarders we like to ship as much as possible with you all.</p>
                               <div class="testimonial-meta">
                                 <h4>Marko Smith</h4>
                                 <p>Aify Agency</p>
