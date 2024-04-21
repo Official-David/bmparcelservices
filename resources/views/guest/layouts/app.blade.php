@@ -126,34 +126,12 @@
                                         </li>
                                     </ul>
                                 </li>
-                                {{-- <li class="nav-item has-dropdown"><a class="dropdown-toggle" href="#"
-                                        data-toggle="dropdown"><span>news &amp; media</span></a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a href="{{ route('blog-grid-fullwidth') }}"><span>our
-                                                    blog</span></a></li>
-                                        <li class="nav-item"><a
-                                                href="{{ route('blog-single-sidebar') }}"><span>single blog
-                                                    post</span></a></li>
-                                        <li class="nav-item"><a href="{{ route('page-our-services') }}"><span>our
-                                                    services</span></a></li>
-                                        <li class="nav-item"><a href="{{ route('case-studies-grid') }}"><span>case
-                                                    studies grid</span></a></li>
-                                        <li class="nav-item"><a
-                                                href="{{ route('case-studies-standard') }}"><span>case studies
-                                                    standard</span></a></li>
-                                        <li class="nav-item"><a href="{{ route('case-study-single') }}"><span>single
-                                                    case study</span></a></li>
-                                    </ul>
-                                </li> --}}
+                               
                                 <li class="nav-item has-dropdown"><a class="dropdown-toggle" href="#"
                                         data-toggle="dropdown"><span>features</span></a>
                                     <ul class="dropdown-menu">
-                                        {{-- <li class="nav-item"><a href="{{ route('request-quote') }}"><span>request a
-                                                    quote</span></a></li> --}}
                                         <li class="nav-item"><a href="{{ route('track-shipment') }}"><span>track
                                                     &amp; trace</span></a></li>
-                                        {{-- <li class="nav-item"><a href="{{ route('find-location') }}"><span>find a
-                                                    location</span></a></li> --}}
                                         <li class="nav-item"><a href="{{ route('faqs') }}"><span>help &amp;
                                                     fAQs</span></a></li>
                                     </ul>
@@ -187,19 +165,8 @@
                                     </div>
                                 </div>
                                 <!--  End .module-search-->
-                                <!-- Start .module-contact-->
-                                <div class="module-contact"><a class="btn btn--primary"
-                                        href="javascript:void(0)">request a quote</a></div>
-                                <!-- Start .module-language-->
-                                <div class="module module-language">
-                                    <div class="selected"><span>en </span><i class="fas fa-chevron-down"></i></div>
-                                    <div class="lang-list">
-                                        <ul>
-                                            <li> <a href="javascript:void(0)">english</a></li>
-                                            <li> <a href="javascript:void(0)">arabic</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                
+                               
                             </div>
                             <!-- End .module-container -->
                         </div>
@@ -313,7 +280,7 @@
                 <div class="footer-bottom">
                     <div class="row">
                         <div class="col-md-12 col-md-12 text--center footer-copyright">
-                            <div class="copyright"><span>&copy; {{config('app.name')}}, With Love by</span></div>
+                            <div class="copyright"><span>&copy; {{config('app.name')}}, With Love</span></div>
                         </div>
                     </div>
                     <!--  End .row-->

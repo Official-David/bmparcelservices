@@ -224,7 +224,7 @@
             <!-- End .col-lg-4 -->
             <div class="col-12 col-lg-8">
               <div class="locations" id="locations">
-                <p class="presentation">Equita Group is a representative logistics operator providing full range of service in the sphere of customs clearance transportation worldwide for any cargo. We pride ourselves on providing the best transport and shipping services available allover the world.</p>
+                <p class="presentation">{{config('app.name')}} is a representative logistics operator providing full range of service in the sphere of customs clearance transportation worldwide for any cargo. We pride ourselves on providing the best transport and shipping services available allover the world.</p>
                 <div class="map">
                   <iframe class="map-gray" src="https://maps.google.com/maps?q=Pioneer%20Works&amp;t=m&amp;z=13&amp;output=embed&amp;iwloc=near" width="600" height="450" style="border:0;"></iframe>
                 </div>

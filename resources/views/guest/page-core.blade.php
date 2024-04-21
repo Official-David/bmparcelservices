@@ -45,7 +45,7 @@
               </div>
               <div class="about-block"> 
                 <div class="block-left"> 
-                  <p>Equita Group is a representative logistics operator providing full range of service in the sphere of customs clearance transportation worldwide for any cargo</p>
+                  <p>{{config('app.name')}} is a representative logistics operator providing full range of service in the sphere of customs clearance transportation worldwide for any cargo</p>
                   <p>We pride ourselves on providing the best transport and shipping services available allover the world. Our skilled personnel, utilising the latest communications, tracking and combined with experience through integrated supply chain solutions!</p>
                 </div>
               </div>
