@@ -17,13 +17,30 @@ use App\Http\Controllers\ShipmentController;
 */
 
 Route::controller(PagesController::class)->group(function () {
-    Route::get('/', 'index')->name('home');
-    Route::get('/services', 'services')->name('services');
-    Route::get('/about', 'about')->name('about');
-    Route::get('/track', 'track')->name('track');
-    Route::get('/contact', 'contact')->name('contact');
-    Route::get('/track-result', 'trackResult')->name('track.result');
-    Route::post('/track-shipment', 'trackShipment')->name('track.shipment');
+    Route::view('/', 'guest/index')->name('home');
+    Route::view('/about', 'guest/page-about')->name('about');
+    Route::view('/core', 'guest/page-core')->name('page-core');
+    Route::view('/leadership', 'guest/page-team')->name('page-team');
+    Route::view('/global-location', 'guest/page-location')->name('page-locations');
+    Route::view('/our-gallery', 'guest/page-gallery')->name('page-gallery');
+    Route::view('/awards', 'guest/page-awards')->name('page-awards');
+    Route::view('/careers', 'guest/page-careers')->name('page-careers');
+    Route::view('/warehouse', 'guest/service-warehouse')->name('service-warehouse');
+    Route::view('/ocean-freight', 'guest/service-ocean-freight')->name('service-ocean-freight');
+    Route::view('/air-freight', 'guest/service-air-freight')->name('service-air-freight');
+    Route::view('/road-freight', 'guest/service-road-freight')->name('service-road-freight');
+    Route::view('/supply-chain', 'guest/service-supply')->name('service-supply');
+    Route::view('/packaging', 'guest/service-packaging')->name('service-packaging');
+    Route::view('/retail-consumer', 'guest/industry-retail')->name('industry-retail');
+    Route::view('/sciences-healthcare', 'guest/industry-science')->name('industry-science');
+    Route::view('/Industry-chemical', 'guest/industry-chemical')->name('industry-chemical');
+    Route::view('/power-generation', 'guest/industry-power')->name('industry-power');
+    Route::view('/food-beverage', 'guest/industry-food')->name('industry-food');
+    Route::view('/oil-and-gas', 'guest/industry-oil')->name('industry-oil');
+    Route::view('/track-shipment', 'guest/track-shipment')->name('track-shipment');
+    Route::view('/faqs', 'guest/faqs')->name('faqs');
+    Route::view('/contact', 'guest/contact')->name('contact');
+    
 });
 
 
