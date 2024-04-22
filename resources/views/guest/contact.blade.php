@@ -1,15 +1,7 @@
 @extends('guest.layouts.app')
 @section('title', 'Contact')
 @section('content')
-      <!--
-      ============================
-      Google Maps Section
-      ============================
-      -->
-      <section class="map map-2"> 
-        <iframe class="map-gray" src="https://maps.google.com/maps?q=Pioneer%20Works&amp;t=m&amp;z=13&amp;output=embed&amp;iwloc=near" width="600" height="450" style="border:0;"></iframe>
-      </section>
-      <!--
+    
       ============================
       Contact Information Section
       ============================
@@ -24,8 +16,7 @@
                     <h6>contact details</h6>
                     <ul class="list-unstyled info">
                       <li><span class="fas fa-map-marker-alt"></span><a href="javascript:void(0)">New York 11226 United States.</a></li>
-                      <li><span class="fas fa-envelope"></span><a href="mailto::Equita@7oroof.com">Equita@7oroof.com</a></li>
-                      <li><span class="fas fa-phone-alt"></span><a href="tel:01061245741">(002) 01061245741</a></li>
+                      <li><span class="fas fa-envelope"></span><a href="mailto::{{config('app.contact_email')}}">{{config('app.contact_email')}}</a></li>
                     </ul>
                   </div>
                 </div>

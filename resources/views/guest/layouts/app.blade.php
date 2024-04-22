@@ -264,9 +264,9 @@
                                     <p>If you have any questions or need help, feel free to contact with our team.</p>
                                     <ul>
                                         <li class="phone"><a href="tel:+01061245741"><i
-                                                    class="fas fa-phone-alt"></i> 01061245741</a></li>
-                                        <li class="address"><a href="javascript:void(0)">2307 Beverley Rd Brooklyn,
-                                                New York 11226 United States.</a></li>
+                                                    class="fas fa-envelope"></i> {{config('app.contact_email')}}</a></li>
+                                        {{-- <li class="address"><a href="javascript:void(0)">2307 Beverley Rd Brooklyn,
+                                                New York 11226 United States.</a></li> --}}
                                     </ul>
                                 </div>
                             </div>
