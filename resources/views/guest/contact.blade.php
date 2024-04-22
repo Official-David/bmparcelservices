@@ -1,11 +1,6 @@
 @extends('guest.layouts.app')
 @section('title', 'Contact')
 @section('content')
-    
-      ============================
-      Contact Information Section
-      ============================
-      -->
       <section class="contact-info"> 
         <div class="container"> 
           <div class="row"> 
