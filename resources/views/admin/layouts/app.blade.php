@@ -1,185 +1,168 @@
-<!doctype html>
-<html lang="en" dir="ltr">
+<!DOCTYPE html>
+<html lang="en" data-sidebar-color="light" data-topbar-color="light" data-sidebar-view="default">
+
 <head>
-		<!-- Meta data -->
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-		<meta content="FhqShipping – Make shipments anywhere fast and easy" name="description">
-		<meta content="Fhq Shipping Company" name="author">
-		<meta name="keywords" content="fhqshipping, fhq shipping"   />
-		<!--favicon -->
-<link rel="icon" href="{{asset('app/images/brand/favicon.ico')}}" type="image/x-icon"/>
-<link rel="shortcut icon" href="{{asset('app/images/brand/favicon.ico')}}" type="image/x-icon"/>
-<!-- TITLE -->
-<title>@yield('title') | {{config('app.name')}}</title>
-<!--Sweat Alert Css-->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<!-- DASHBOARD CSS -->
-<link href="{{asset('app/css/dashboard.css')}}" rel="stylesheet"/>
-<link href="{{asset('app/css/dashboard-dark.css')}}" rel="stylesheet"/>
-<link href="{{asset('app/css/style-modes.css')}}" rel="stylesheet"/>
-<!-- HORIZONTAL-MENU CSS -->
-<link href="{{asset('app/plugins/horizontal-menu/dropdown-effects/fade-down.css')}}" rel="stylesheet">
-<link href="{{asset('app/plugins/horizontal-menu/horizontal-menu.css')}}" rel="stylesheet">
-<!--C3.JS CHARTS PLUGIN -->
-<link href="{{asset('app/plugins/charts-c3/c3-chart.css')}}" rel="stylesheet"/>
-<!-- TABS CSS -->
-<link href="{{asset('app/plugins/tabs/style-2.css')}}" rel="stylesheet" type="text/css">
-<!-- PERFECT SCROLL BAR CSS-->
-<link href="{{asset('app/plugins/pscrollbar/perfect-scrollbar.css')}}" rel="stylesheet" />
-<!--- FONT-ICONS CSS -->
-<link href="{{asset('app/css/icons.css')}}" rel="stylesheet"/>
-<!-- SELECT2 CSS -->
-<link href="{{asset('app/plugins/select2/select2.min.css')}}" rel="stylesheet"/>
-<!-- Skin css-->
-<link href="{{asset('app/skins/skins-modes/color1.css')}}"  id="theme" rel="stylesheet" type="text/css" media="all" />
-<!-- SIDEBAR CSS -->
-<link href="{{asset('app/plugins/sidebar/sidebar.css')}}" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>@yield('title') | {{ config('app.name') }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="MyraStudio" name="author">
 
-<!-- Switcher CSS -->
-<link href="{{asset('app/switcher/css/switcher.css')}}" rel="stylesheet">
-<link href="{{asset('app/switcher/demo.css')}}" rel="stylesheet">	</head>
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="app/images/favicon.ico.png">
 
-	<body class="default-header">
-		<!-- GLOBAL-LOADER -->
-		<div id="global-loader">
-			<img src="{{asset('app/images/svgs/loader.svg')}}" class="loader-img" alt="Loader">
-		</div>
-		<div class="page">
-			<div class="page-main">
-				<!-- HEADER -->
-				<div class="header">
-					<div class="container">
-						<div class="d-flex">
-						    <a id="horizontal-navtoggle" class="animated-arrow hor-toggle"><span></span></a>
-							<a class="header-brand" href="{{route('dashboard')}}">
-								<img src="{{asset('app/images/brand/logo.png')}}" class="header-brand-img desktop-logo" alt="Solic logo">
-								<img src="{{asset('app/images/brand/logo-1.png')}}" class="header-brand-img mobile-view-logo" alt="Solic logo">
-							</a><!-- LOGO -->
-							<div class="d-flex order-lg-2 ml-auto header-right-icons header-search-icon">
-							    <a href="#" data-toggle="search" class="nav-link nav-link-lg d-md-none navsearch"><i class="fa fa-search"></i></a>
-								<div class="">
-									<form class="form-inline">
-										<div class="search-element">
-											<input type="search" class="form-control header-search" placeholder="Search…" aria-label="Search" tabindex="1">
-											<button class="btn btn-primary-color" type="submit"><i class="fa fa-search"></i></button>
-										</div>
-									</form>
-								</div><!-- SEARCH -->
-								<div class="dropdown d-md-flex">
-									<a class="nav-link icon full-screen-link nav-link-bg" id="fullscreen-button">
-										<i class="fe fe-maximize-2" ></i>
-									</a>
-								</div><!-- FULL-SCREEN -->
-								
-								<div class="dropdown d-md-flex header-settings">
-									<a href="#" class="nav-link " data-toggle="dropdown">
-										<span><img src="{{asset('app/images/users/male/32.jpg')}}" alt="profile-user" class="avatar brround cover-image mb-0 ml-0"></span>
-									</a>
-									<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-										<div class="drop-heading  text-center border-bottom pb-3">
-											<p class="text-dark mb-1">{{Auth::user()->name}}</p>
-											<small class="text-muted">{{Auth::user()->email}}</small>
-										</div>
-										{{-- <div>
-											<h6 class="sub-icon dropdown-item"><a href="#"><i class="zmdi zmdi-lock-outline"></i> Change Password</a></h6>
-										</div> --}}
-										<form action="{{ route('logout') }}" method="post">
-											@csrf
-											<button class="sub-icon dropdown-item"><i class="mdi mdi-logout-variant mr-2"></i> Logout</button></form>
-									</div>
-								</div><!-- SIDE-MENU -->
-								<!-- FULL-SCREEN -->
-							</div>
-						</div>
-					</div>
-				</div>
-<!-- HEADER END -->
-				<!-- HORIZONTAL-MENU -->
-				<div class="sticky">
-					<div class="horizontal-main hor-menu clearfix">
-						<div class="horizontal-mainwrapper container clearfix">
-							<nav class="horizontalMenu clearfix">
-								<ul class="horizontalMenu-list">
-									<li aria-haspopup="true"><a href="{{route('dashboard')}}" class="sub-icon"><i class="fe fe-airplay"></i> Dashboard </a>
-									</li>
-									<li aria-haspopup="true"><a class="sub-icon"><i class="fe fe-database"></i> Shipments <i class="fa fa-angle-down horizontal-icon"></i></a>
-										<ul class="sub-menu">
-											<li aria-haspopup="true"><a href="{{route('create.shipment')}}">New Shipment</a>
-											</li>
-											<li aria-haspopup="true"><a href="{{route('shipments')}}">View Shipments</a>
-											</li>
-											
-										</ul>
-									</li>
-								</ul>
-							</nav>
-							<!-- NAV END -->
-						</div>
-					</div>
-				</div>
-<!-- HORIZONTAL-MENU END -->
-@yield('content')
-            			<!-- FOOTER -->
-                        <footer class="footer">
-                            <div class="container">
-                                <div class="row align-items-center flex-row-reverse">
-                                    <div class="col-md-12 col-sm-12 text-center">
-                                        Copyright © 2022 <a href="#">{{config('app.name')}}</a>. All rights reserved.
-                                    </div>
-                                </div>
-                            </div>
-                        </footer>
-                    <!-- FOOTER END -->		</div><!-- End Page -->
-                                <!-- BACK-TO-TOP -->
-                    <a href="#top" id="back-to-top"><i class="fa fa-long-arrow-up"></i></a>
-                    <!-- JQUERY SCRIPTS -->
-                    <script src="{{asset('app/js/vendors/jquery-3.2.1.min.js')}}"></script>
-                    <!-- BOOTSTRAP SCRIPTS -->
-                    <script src="{{asset('app/js/vendors/bootstrap.bundle.min.js')}}"></script>
-                    <!-- SPARKLINE -->
-                    <script src="{{asset('app/js/vendors/jquery.sparkline.min.js')}}"></script>
-                    <!-- CHART-CIRCLE -->
-                    <script src="{{asset('app/js/vendors/circle-progress.min.js')}}"></script>
-                    <!-- RATING STAR -->
-                    <script src="{{asset('app/plugins/rating/jquery.rating-stars.js')}}"></script>
-                    <!-- HORIZONTAL-MENU -->
-                    <script src="{{asset('app/plugins/horizontal-menu/horizontal-menu.js')}}"></script>
-                    <!-- PERFECT SCROLL BAR JS-->
-                    <script src="{{asset('app/plugins/pscrollbar/perfect-scrollbar.js')}}"></script>
-                    <script src="{{asset('app/plugins/pscrollbar/pscroll-1.js')}}"></script>
-                    <!-- SIDEBAR JS -->
-                    <script src="{{asset('app/plugins/sidebar/sidebar.js')}}"></script>
-                    <!-- SELECT2 JS -->
-                    <script src="{{asset('app/plugins/select2/select2.full.min.js')}}"></script>
-                    <script src="{{asset('app/js/select2.js')}}"></script>
-                    <!-- C3.JS CHART PLUGIN -->
-                    <script src="{{asset('app/plugins/charts-c3/d3.v5.min.js')}}"></script>
-                    <script src="{{asset('app/plugins/charts-c3/c3-chart.js')}}"></script>
-                    <!-- INPUT MASK PLUGIN-->
-                    <script src="{{asset('app/plugins/input-mask/jquery.mask.min.js')}}"></script>
-                    <!-- CHARTJS CHART -->
-                    <script src="{{asset('app/plugins/chart/Chart.bundle.js')}}"></script>
-                    <script src="{{asset('app/plugins/chart/utils.js')}}"></script>
-                    <!-- PIETY CHART -->
-                    <script src="{{asset('app/plugins/peitychart/jquery.peity.min.js')}}"></script>
-                    <script src="{{asset('app/plugins/peitychart/peitychart.init.js')}}"></script>
-                    <!-- ECHART JS -->
-                    <script src="{{asset('app/plugins/echarts/echarts.js')}}"></script>
-                    <!-- INDEX-SCRIPTS -->
-                    <script src="{{asset('app/js/index5.js')}}"></script>
-                    <!-- STICKY JS -->
-                    <script src="{{asset('app/js/stiky.js')}}"></script>
-                    <!-- CUSTOM JS -->
-                    <script src="{{asset('app/js/custom.js')}}"></script>
-                    
-                    <!-- Switcher JS -->
-                    <script src="{{asset('app/switcher/js/switcher.js')}}"></script>
-                    <script>
-                        function logout() {
-                            this.closest('form').submit();
-                        }
-                    </script>	
-                        </body>
-                    
-                    </html>
+    <!-- App css -->
+    <link href="{{ asset('app/css/theme.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('app/css/icons.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('app/libs/@iconscout/unicons/css/line.css') }}" type="text/css" rel="stylesheet">
+
+    <!-- Head Js -->
+    <script src="{{ asset('app/js/head.js') }}"></script>
+</head>
+
+<body>
+
+    <div class="app-wrapper">
+
+        <!-- Sidebar Menu Start -->
+        <div class="app-menu">
+
+            <!-- Brand Logo -->
+            <a class='logo-box' href='#'>
+                <img src="app/images/logo-light.png" class="logo-light h-6" alt="Light logo">
+                <img src="{{ asset('assets/images/logo/logo-dark.png') }}" class="logo-dark h-6" alt="Dark logo">
+            </a>
+
+            <!--- Menu -->
+            <div data-simplebar>
+                <ul class="menu">
+                    <li class="menu-title">Menu</li>
+
+                    <li class="menu-item">
+                        <a class='menu-link' href={{ route('dashboard') }}>
+                            <span class="menu-icon"><i class="uil uil-estate"></i></span>
+                            <span class="menu-text"> Dashboard </span>
+                            <span class="badge bg-primary rounded ms-auto">01</span>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a class='menu-link' href={{ route('shipments') }}>
+                            <span class="menu-icon"><i class="uil uil-ship"></i></span>
+                            <span class="menu-text"> Shipments </span>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <form action="{{ route('logout') }}" method="post" class="">
+                            @csrf
+                            <button class="menu-link">
+                                <span
+                                    class="menu-icon"><i class="uil uil-signout"></i></span><span class="menu-text"> Logout
+                                </span>
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Sidebar Menu End  -->
+
+        <!-- Start Page Content here -->
+        <div class="app-content">
+            <!-- Topbar Start -->
+            <header class="app-header flex items-center px-5 gap-4">
+
+                <!-- Brand Logo -->
+                <a class='logo-box' href='#'>
+                    <img src="{{ asset('assets/images/logo/logo-dark.png') }}" class="h-6" alt="Small logo">
+                </a>
+
+                <!-- Sidenav Menu Toggle Button -->
+                <button id="button-toggle-menu" class="nav-link p-2">
+                    <span class="sr-only">Menu Toggle Button</span>
+                    <span class="flex items-center justify-center h-6 w-6">
+                        <i class="uil uil-bars text-2xl"></i>
+                    </span>
+                </button>
+
+                <!-- Page Title -->
+                <h4 class="text-slate-900 text-lg font-medium">Dashboard</h4>
+
+                <button id="button-toggle-profile" class="nav-link p-2 ms-auto">
+                    <span class="sr-only">Profile Menu Offcanvas Button</span>
+                    <span class="flex items-center justify-center h-6 w-6">
+                        <i class="uil uil-heart-rate text-2xl"></i>
+                    </span>
+                </button>
+            </header>
+            <!-- Topbar End -->
+
+            @yield('content')
+            <!-- Footer Start -->
+            <footer class="footer h-16 flex items-center px-6 border-t border-gray-200 mt-auto">
+                <div class="flex md:justify-between justify-center w-full gap-4">
+                    <div>
+                        <p class="text-sm font-medium">
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script> © {{config('app.name')}}
+                        </p>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer End -->
+
+        </div>
+        <!-- End Page content -->
+
+        <div id="search-modal"
+            class="hs-overlay hidden w-full h-full fixed top-0 start-0 z-[60] overflow-x-hidden overflow-y-auto pointer-events-none">
+            <div
+                class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto">
+                <div class="flex flex-col bg-white shadow-sm rounded-xl pointer-events-auto overflow-hidden">
+                    <div class="relative z-[60]">
+                        <input type="search" id="search-input" class="form-input ps-10">
+                        <span class="absolute start-3 top-1.5">
+                            <i class="uil uil-search text-lg"></i>
+                        </span>
+
+                        <span class="absolute end-3 top-1.5">
+                            <button data-hs-overlay="#search-modal">
+                                <i class="uil uil-times text-lg"></i>
+                            </button>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Plugin Js -->
+    <script src="app/libs/jquery/jquery.min.js"></script>
+    <script src="app/libs/simplebar/simplebar.min.js"></script>
+    <script src="app/libs/node-waves/waves.min.js"></script>
+    <script src="app/libs/preline/preline.js"></script>
+
+    <!-- App Js -->
+    <script src="{{ asset('app/js/app.js') }}"></script>
+
+    <!-- Apexcharts js -->
+    <script src="{{ asset('app/libs/apexcharts/apexcharts.min.js') }}"></script>
+
+    <!-- Knob charts js -->
+    <script src="{{ asset('app/libs/jquery-knob/jquery.knob.min.js') }}"></script>
+
+    <!-- Morris Js-->
+    <script src="{{ asset('app/libs/morris.js/morris.min.js') }}"></script>
+
+    <!-- Raphael Js-->
+    <script src="{{ asset('app/libs/raphael/raphael.min.js') }}"></script>
+
+    <!-- Dashboard Project Page js -->
+    <script src="{{ asset('app/js/pages/dashboard.js') }}"></script>
+
+</body>
+
+</html>

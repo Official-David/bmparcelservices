@@ -2,77 +2,58 @@
 @section('title', 'Shipments')
 @section('content')
 
-    <!-- CONTAINER -->
-    <div class="container content-area ">
-        <!-- PAGE-HEADER -->
-        <div class="page-header">
-            <h4 class="page-title">Shipments</h4>
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Shipments</li>
-            </ol>
-        </div>
-        <!-- PAGE-HEADER END -->
-        <!-- ROW-1 OPEN -->
-        <div class="row">
-            <div class="col-md-12 col-lg-12">
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title">Shipments <button class="btn btn-success btn-sm"><a
-                                    href="{{ route('create.shipment') }}" style="color:white">Create Shipment</a></button>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <div class="table-responsive">
-                            <table id="datable-1" class="table table-striped table-bordered text-nowrap w-100">
-                                <thead>
-                                    <tr>
-                                        <th>Shipment/Package Name</th>
-                                        <th>Tracking Id</th>
-                                        <th>Shipment Status</th>
-                                        <th>Created at</th>
-                                        <th colspan="2">Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @forelse ($shipments as $shipment)
-                                        <tr>
-                                            <td>{{ ucfirst($shipment->shipment_name) }}</td>
-                                            <td><a
-                                                    href="{{ route('shipment.details', $shipment->id) }}">{{ ucfirst($shipment->tracking_id) }}</a>
-                                            </td>
-                                            <td>{{ ucfirst($shipment->shipment_status) }}</td>
-                                            <td>{{ ucfirst($shipment->created_at) }}</td>
-                                            <td>
-                                                <form action="{{ route('delete.shipment', $shipment->id) }}" method="POST">
-                                                    @csrf 
-                                                    <a class="btn btn-success fa fa-edit" href="{{route('edit.shipment', $shipment->id)}}"></a>
-                                                    <button class="btn btn-danger fa fa-trash" type="submit"></button>
-                                                </form>
-                                            </td>
-                                        </tr>
-                                    @empty
-                                        <tr>
-                                            <td class="text-center" colspan="5">No Shipment Yet!</td>
-                                        </tr>
-                                    @endforelse
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="float-sm-end pagination-rounded justify-content-center mt-4">
-                            {{ $shipments->onEachSide(1)->links() }}
-                        </div>
-                    </div>
-                    <!-- TABLE WRAPPER -->
-                </div>
-                <!-- SECTION WRAPPER -->
+<main class="p-6">
+    <div class="grid xl:grid-cols-1 gap-6">
+        <div class="card overflow-hidden">
+            <div class="card-header flex justify-between items-center">
+                <h4 class="card-title">Shipments</h4>
+                <a href="{{ route('create.shipment') }}" class="btn btn-sm bg-light !text-sm text-gray-800"><span class="fa-solid fa-plus px-2"></span>  Create Shipment</a>
             </div>
-        </div>
-        <!-- ROW-1 CLOSED -->
+
+            <div class="overflow-x-auto">
+                <div class="min-w-full inline-block align-middle whitespace-nowrap">
+                    <div class="overflow-hidden">
+                        <table class="min-w-full">
+                            <thead class="bg-light/40 border-b border-gray-200">
+                                <tr>
+                                    <th class="px-6 py-3 text-start">Shipment/Package Name</th>
+                                    <th class="px-6 py-3 text-start">Tracking Id</th>
+                                    <th class="px-6 py-3 text-start">Shipment Status</th>
+                                    <th class="px-6 py-3 text-start">Created at</th>
+                                    <th class="px-6 py-3 text-start" colspan="2">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @forelse ($shipments as $shipment)
+                                <tr class="border-b border-gray-200">
+                                    <td class="px-6 py-3">{{ ucfirst($shipment->shipment_name) }}</td>
+                                    <td class="px-6 py-3"><a
+                                        href="{{ route('shipment.details', $shipment->id) }}">{{ ucfirst($shipment->tracking_id) }}</a></td>
+                                    <td class="px-6 py-3">
+                                        <span
+                                            class="px-2 py-1 bg-success/10 text-success text-xs rounded">{{ ucfirst($shipment->shipment_status) }}</span>
+                                    </td>
+                                    <td class="px-6 py-3">{{ ucfirst($shipment->created_at) }}</td>
+                                    <td class="px-6 py-3"><form action="{{ route('delete.shipment', $shipment->id) }}" method="POST">
+                                        @csrf 
+                                        <a class="btn btn-success fa fa-edit" href="{{route('edit.shipment', $shipment->id)}}"></a>
+                                        <button class="btn btn-danger fa fa-trash" type="submit"></button>
+                                    </form></td>
+                                </tr>
+                                @empty
+                            <tr>
+                                <td class="text-center" colspan="5">No Shipment Yet!</td>
+                            </tr>
+                        @endforelse
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end card-->
     </div>
-    <!-- CONTAINER CLOSED -->
-    </div>
-    <!-- SIDE-BAR -->
+
+</main>
 
     <!-- SIDE-BAR CLOSED -->
     @if (session('shipmentSaved'))

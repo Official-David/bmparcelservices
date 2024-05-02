@@ -10,6 +10,7 @@ class AdminController extends Controller
 {
     public function index(){
         $shipment = Shipment::get();
-        return view('admin.dashboard', compact('shipment'));
+        $shipments = Shipment::latest()->paginate(10);
+        return view('admin.dashboard', compact('shipment', 'shipments'));
     }
 }

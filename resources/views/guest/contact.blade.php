@@ -1,6 +1,29 @@
 @extends('guest.layouts.app')
 @section('title', 'Contact')
 @section('content')
+<section class="page-title page-title-4 bg-overlay bg-overlay-dark bg-parallax" id="page-title">
+  <div class="bg-section"><img src="assets/images/page-titles/10.jpg" alt="Background"/></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <div class="title text-lg-left"> 
+          <div class="title-sub-heading">
+            <p>24/7 Customer &amp; Services</p>
+          </div>
+          <div class="title-heading">
+            <h1>Global Logistics Partner To World’s Famous Brands For Over 25 Years!</h1>
+          </div>
+          <div class="clearfix"></div>
+         
+        </div>
+        <!-- End .title -->
+      </div>
+      <!-- End .col-lg-8 -->
+    </div>
+    <!-- End .row-->
+  </div>
+  <!-- End .container-->
+</section>
       <section class="contact-info"> 
         <div class="container"> 
           <div class="row"> 
