@@ -3,9 +3,12 @@
 @section('content')
 
     <!-- CONTAINER -->
+    <main class="p-6">
+        <div class="flex flex-col gap-6">
+            <div class="card">
     <div class="container content-area ">
         <!-- PAGE-HEADER -->
-        <div class="page-header">
+        {{-- <div class="page-header">
             <h4 class="page-title">Shipment Details for <u>{{ $shipment[0]->shipment_name }}</u>
                 ({{ $shipment[0]->tracking_id }})</h4>
             <ol class="breadcrumb">
@@ -13,7 +16,7 @@
                 <li class="breadcrumb-item active" aria-current="page"><a href="{{route('shipments')}}">Shipment</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Shipment Details</li>
             </ol>
-        </div>
+        </div> --}}
         <!-- PAGE-HEADER END -->
         <!-- ROW-1 OPEN -->
         <div class="row">

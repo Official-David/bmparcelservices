@@ -19,6 +19,7 @@
         -->
         <link href="{{ asset('assets/css/vendor.min.css') }}" rel="stylesheet" />
         <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" />
+        <link href="{{ asset('assets/css/timeline.css') }}" rel="stylesheet" />
     </head>
 
     <body>
@@ -125,17 +126,8 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </li>
-                               
-                                <li class="nav-item has-dropdown"><a class="dropdown-toggle" href="#"
-                                        data-toggle="dropdown"><span>features</span></a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a href="{{ route('track-shipment') }}"><span>track
-                                                    &amp; trace</span></a></li>
-                                        <li class="nav-item"><a href="{{ route('faqs') }}"><span>help &amp;
-                                                    fAQs</span></a></li>
-                                    </ul>
-                                </li>
+                                </li>                          
+                                <li class="nav-item"><a href="{{ route('track-shipment') }}"><span>track</span></a></li>
                                 <li class="nav-item"><a href="{{route('contact')}}"><span>contact</span></a></li>
                             </ul>
                             <div class="module-container">

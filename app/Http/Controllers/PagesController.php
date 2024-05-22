@@ -27,14 +27,13 @@ class PagesController extends Controller
         return view('guest.contact');
     }
     public function trackShipment(Request $request){
-        $shipments = Shipment::where('tracking_id', $request->input('tracking_id'))->get();
-        $senderInfo = Sender::where('shipment_id', $shipments[0]->id)->get();
-        $receiverInfo = Receiver::where('shipment_id', $shipments[0]->id)->get();
-        if($shipments->count() > 0){
-            $shipmentDetails = Shipment_Notification::where('shipment_id', $shipments[0]->id)->get();
-            return view('guest.track-result', compact('shipments', 'shipmentDetails', 'senderInfo', 'receiverInfo'));
-        }else{
-            return back();
+        $shipments = Shipment::where('tracking_id', $request->input('tracking_id'))->first();
+        if($shipments){
+            $senderInfo = Sender::where('shipment_id', $shipments->id)->get();
+            $receiverInfo = Receiver::where('shipment_id', $shipments->id)->get();
+            $shipmentDetails = Shipment_Notification::where('shipment_id', $shipments->id)->latest()->get();
+            return view('guest/track-shipment', compact('shipments', 'shipmentDetails', 'senderInfo', 'receiverInfo'));
         }
+        return back();
     }
 }

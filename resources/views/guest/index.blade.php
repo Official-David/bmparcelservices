@@ -301,22 +301,22 @@
                           </div>
                         </form>
                         <form class="contactForm track-form mb-0" method="post" action="https://demo.zytheme.com/equita/assets/php/contact.php">
-                          <h5 class="card-heading">personal data</h5>
+                          <h5 class="card-heading">shipment type</h5>
                           <div class="row">
                             <div class="col-12"> 
                               <div class="select-container">
                                 <select class="form-control">
-                                  <option value="default">shipment type</option>
-                                  <option value="AL">type 1</option>
-                                  <option value="AK">type 2</option>
+                                  <option value="Ocean Freight">Ocean Freight</option>
+                                  <option value="Air Freight">Air Freight</option>
+                                  <option value="Road Freight">Road Freight</option>
                                 </select>
                               </div>
                             </div>
                           </div>
-                          <h5 class="card-heading">tracking number</h5>
+                          <h5 class="card-heading">tracking id</h5>
                           <div class="row">
                             <div class="col-12"> 
-                              <textarea class="form-control" name="contact-tracking-number" cols="30" rows="2" placeholder="You can enter up to a maximum of 10 airway bill numbers for tracking." required=""></textarea>
+                              <textarea class="form-control" name="contact-tracking-number" cols="30" rows="2" placeholder="You can enter a tracking Id." required=""></textarea>
                             </div>
                             <div class="col-12">
                               <div class="custom-radio-group">

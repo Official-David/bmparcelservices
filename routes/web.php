@@ -40,7 +40,7 @@ Route::controller(PagesController::class)->group(function () {
     Route::view('/track-shipment', 'guest/track-shipment')->name('track-shipment');
     Route::view('/faqs', 'guest/faqs')->name('faqs');
     Route::view('/contact', 'guest/contact')->name('contact');
-    
+    Route::post('/track-shipment', 'trackShipment')->name('trackshipment');
 });
 
 
