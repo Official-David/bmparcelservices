@@ -4,19 +4,20 @@
 
     <!-- CONTAINER -->
     <main class="p-6">
-        <div class="flex flex-col gap-6">
-            <div class="card">
-    <div class="container content-area ">
+        <div class="grid xl:grid-cols-1 gap-6">
         <!-- PAGE-HEADER -->
-        {{-- <div class="page-header">
-            <h4 class="page-title">Shipment Details for <u>{{ $shipment[0]->shipment_name }}</u>
+        <div class="card overflow-hidden">
+            <div class="card-header flex justify-between items-center">
+                <h4 class="card-title">Shipment Details for <u>{{ $shipment[0]->shipment_name }}</h4>
+                <a href="{{ route('create.shipment') }}" class="btn btn-sm bg-light !text-sm text-gray-800"><span class="fa-solid fa-plus px-2"></span>  Create Shipment</a>
+            </div>
+            {{-- <h4 class="page-title">Shipment Details for <u>{{ $shipment[0]->shipment_name }}</u>
                 ({{ $shipment[0]->tracking_id }})</h4>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
                 <li class="breadcrumb-item active" aria-current="page"><a href="{{route('shipments')}}">Shipment</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Shipment Details</li>
-            </ol>
-        </div> --}}
+            </ol> --}}
         <!-- PAGE-HEADER END -->
         <!-- ROW-1 OPEN -->
         <div class="row">
@@ -27,16 +28,17 @@
                                     href="{{ route('new.shipment.details', $shipment[0]->id) }}" style="color:white">Update
                                     Shipment Info</a></button></div>
                     </div>
-                    <div class="card-body">
-                        <div class="table-responsive">
-                            <table id="datable-1" class="table table-striped table-bordered w-100">
-                                <thead>
+                    <div class="overflow-x-auto">
+                        <div class="min-w-full inline-block align-middle whitespace-nowrap">
+                            <div class="overflow-hidden">
+                            <table class="min-w-full">
+                                <thead  class="bg-light/40 border-b border-gray-200">
                                     <tr>
-                                        <th>Delivery Status</th>
-                                        <th>Message</th>
-                                        <th>Location</th>
-                                        <th>Created at</th>
-                                        <th>Action</th>
+                                        <th class="px-6 py-3 text-start">Delivery Status</th>
+                                        <th class="px-6 py-3 text-start">Message</th>
+                                        <th class="px-6 py-3 text-start">Location</th>
+                                        <th class="px-6 py-3 text-start">Created at</th>
+                                        <th class="px-6 py-3 text-start">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>

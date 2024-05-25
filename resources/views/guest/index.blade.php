@@ -214,7 +214,7 @@
               </div>
             </div>
             <!--End .col-lg-6-->
-            <div class="col-12"> 
+            {{-- <div class="col-12"> 
               <div class="contact-panel">
                 <div class="contact-types"> <a class="button track-btn active" href="javascript:void(0)" data-form="trackFormActive"> <i class="flaticon-009-shipping-1"> </i><span>track &amp; trace</span></a></div>
                 <div class="contact-card">
@@ -358,7 +358,7 @@
                 </div>
                 <!-- End .contact-card  -->
               </div>
-            </div>
+            </div> --}}
             <!-- .col-lg-6-->
           </div>
           <!-- End .row-->
